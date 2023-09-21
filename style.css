@@ -1,0 +1,19 @@
+body {
+    background-color:rgb(207, 207, 207)
+}
+
+
+.naviItems {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.nav-link {
+    font-weight: 600;
+}
+
+.servicesDrop {
+    color: rgb(18, 19, 100);
+}
