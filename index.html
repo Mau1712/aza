@@ -12,32 +12,35 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Jomolhari&display=swap"
+        rel="stylesheet">
+
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+
+
+
     <title>Aza Consultora</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">AZA LEGAL</a>
+        <div class="container-fluid boxNav">
+            <a class="navbar-brand" href="#">AZA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse naviItems" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link servicesDrop dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Servicios
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Derecho Público</a></li>
-                            <li><a class="dropdown-item" href="#">Derecho Urbanístico</a></li>
-                            <li><a class="dropdown-item" href="#">Tributario</a></li>
-                            <li><a class="dropdown-item" href="#">Civil, Mercantil y Sucesiones</a></li>
-                            <li><a class="dropdown-item" href="#">Litigios, Arbitraje y Negociación</a></li>
-                            <li><a class="dropdown-item" href="#">Corporativo</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Servicios</a>
                     </li>
 
                     <li class="nav-item">
@@ -57,6 +60,293 @@
         </div>
     </nav>
 
+    <header>
+        <div class="frontPage">
+            <div class="frontPagebackgroud">
+                <img src="./img/Mask group.png" class="img-fluid frontPageimg" alt="...">
+
+                <div class="boxButtonsFront">
+                    <h2>AZA</h2>
+                    <p>ABOGADOS Y ASOCIADOS</p>
+                    <div class="ButtonsFront">
+                        <button>Encuéntranos</button>
+                        <button>Contáctanos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="historySection container-fluid">
+            <div class="SubContainHistory container">
+                <h4 class="tittleSection">HISTORIA</h4>
+                <h2>Conoce nuestra Historia</h2>
+                <p>
+                    AZA nace en el año 2022 como resultado de la unión de sus socios fundadores, quienes veían la
+                    necesidad
+                    de
+                    crear una firma compuesta por profesionales del derecho que se han formado dentro de la
+                    administración
+                    pública. Utilizando todas las herramientas y conocimientos en pro de la defensa de los derechos e
+                    intereses
+                    de los particulares, ahora desde el ámbito privado. 
+                    <br><br>
+                    Sus socios fundadores comparten una visión integral del derecho basada en los principios y
+                    conocimientos
+                    obtenidos tanto en su educación universitaria como en el ejercicio profesional del derecho, para
+                    asesorar a
+                    los diversos órganos y entes de la administración pública en la ejecución diaria de sus atribuciones
+                    y
+                    competencias.
+                </p>
+            </div>
+        </section>
+
+        <section class="firmaSection container-fluid">
+            <div class=" subfirmaSection container">
+                <h4 class="tittleSection">FIRMA</h4>
+                <div class="subTittleBox">
+                    <h3 class="subTittle">Garantizamos resultados</h3>
+                    <p class="txtFirm">
+                        Conocer a profundidad los procedimientos y la forma de actuar de los organismos públicos,
+                        asesorando
+                        en
+                        forma efectiva y eficiente a nuestros clientes, tanto en los asuntos de naturaleza pública, así
+                        como
+                        en
+                        los asuntos de carácter civil, mercantil, sucesoral y demás ramas del derecho privado.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="subTittle">Nuestro grupo de expertos</h3>
+                    <p class="txtFirm">
+                        Contar con los servicios jurídicos de AZA brinda un plus para todos los clientes, ya que
+                        nuestros
+                        socios, además de ser abogados egresados de las mejores escuelas de derecho del país y contar
+                        con
+                        especializaciones en derecho administrativo y procesal, han formado su carrera profesional
+                        dentro de
+                        la
+                        administración pública, tanto desde los órganos jurisdiccionales como ejerciendo cargos dentro
+                        de
+                        los
+                        organismo de representación jurídica de diversos municipios.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="ServiceSection">
+            <div class="subfirmaSection">
+                <h4 class="tittleSection">SERVICIOS</h4>
+                <h2 class="subTittleServ">Consultores en cualquier área legal</h2>
+            </div>
+
+            <div class="container">
+
+                <swiper-container class="mySwiper" autoplay-delay="2500" autoplay-disable-on-interaction="false"
+                    pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+                    slides-per-view="auto" coverflow-effect-rotate="25" coverflow-effect-stretch="0"
+                    coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+
+                    <swiper-slide>
+                        <a class="open-modal" data-modal-id="modal1">
+                            <div class="boxTittleCard">
+                                <h4 class="tit">Derecho Público</h4>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+
+                    <swiper-slide>
+                        <a class="open-modal" data-modal-id="modal2">
+                            <div class="boxTittleCard ">
+                                <h4 class="tit">Derecho Urbanístico</h4>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+
+                    <swiper-slide>
+                        <a class="open-modal" data-modal-id="modal3">
+                            <div class="boxTittleCard">
+                                <h4 class="tit">Derecho Tributario</h4>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+
+                    <swiper-slide>
+                        <a class="open-modal" data-modal-id="modal4">
+                            <div class="boxTittleCard">
+                                <h4 class="tit">Civil, Mercantil y Sucesiones</h4>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+
+                    <swiper-slide>
+                        <a class="open-modal" data-modal-id="modal5">
+                            <div class="boxTittleCard">
+                                <h4 class="tit">Litigios, Arbitraje y Negociación</h4>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+
+                    <swiper-slide>
+                        <a class="open-modal" data-modal-id="modal6">
+                            <div class="boxTittleCard">
+                                <h4 class="tit">Corporativo</h4>
+                            </div>
+                        </a>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+            </div>
+        </section>
+
+        <div class="modalDp modal" id="modal1" data-modal-id="modal1">
+            <div class="modal-content container">
+                <div class="modalContent">
+                    <h3>Derecho Público</h3>
+                    <p>
+                        AZA se especializa en prestar servicios a sus clientes en materias concernientes el derecho
+                        administrativo, constitucional, presentación de recursos administrativos, contrataciones
+                        públicas,
+                        redacción de dictámenes, derecho regulatorio, redacción de leyes y ordenanzas, organización
+                        administrativa, asesoría tanto a particulares como a órganos y entes de la administración
+                        pública,
+                        bienes públicos, revisión y redacción de contratos en materia de concesiones, cuidados y
+                        mantenimiento, arrendamiento de bienes públicos, desafectación de bienes públicos, servicios
+                        públicos y en general las distintas materias que comprenden el derecho público.
+                    </p>
+                    <span class="close" data-modal-id="modal1">Volver</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modalDp modal" id="modal2" data-modal-id="modal2">
+            <div class="modal-content container">
+                <div class="modalContent">
+                    <h3>Derecho Urbanístico</h3>
+                    <p>
+                        AZA también es la encargada de tramitar y concluir satisfactoriamente todas las solicitudes de
+                        carácter urbanístico como obras nuevas, refacciones, constancias de terminación de obras,
+                        anexos, solicitud y tramitación de fichas catastrales, cambios de firma, actualización de
+                        documentos ante la autoridad urbanística, solicitud y tramitación de Constancias de Variables
+                        Urbanas Fundamentales, presentación de recursos ante los actos sancionatorios emitidos por la
+                        autoridad urbanística nacional o municipal, entre otras materias propias del derecho
+                        urbanístico.
+                    </p>
+                    <span class="close" data-modal-id="modal2">Volver</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modalDp modal" id="modal3" data-modal-id="modal3">
+            <div class="modal-content container">
+                <div class="modalContent">
+                    <h3>Tributario</h3>
+                    <p>
+                        AZA se encargará de tramitar y concluir satisfactoriamente todas las solicitudes de carácter
+                        tributario ante las autoridades nacionales, estadales y municipales, como solicitud de Licencia
+                        de Actividades Económicas, solvencias, Registros de Información Fiscal, aclaratorias,
+                        presentación de recursos administrativos ante los actos sancionatorios emitidos por la autoridad
+                        tributaria nacional, estadal o municipal, entre otras materias propias del derecho tributario.
+                    </p>
+                    <span class="close" data-modal-id="modal3">Volver</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modalDp modal" id="modal4" data-modal-id="modal4">
+            <div class="modal-content container">
+                <div class="modalContent">
+                    <h3>Civil, Mercantil y Sucesiones.</h3>
+                    <p>
+                        AZA asesorará y representará a los clientes en las materias relacionadas al derecho civil,
+                        mercantil y sucesoral, como redacción y revisión de contratos civiles,divorcios, uniones
+                        estables de hecho, trámites ante el Registro Civil, interdictos, contratos de arrendamiento,
+                        compra y venta, entre otros. Revisión y redacción de actas constitutivas y actas de asamblea de
+                        sociedades mercantiles, contratos mercantiles, adquisiciones y fusiones, trámites ante el
+                        registro mercantil y registro inmobiliario, compra venta de bienes inmuebles, revisión y
+                        redacción de actas constitutivas de fundaciones y asociaciones civiles.
+                    </p>
+                    <span class="close" data-modal-id="modal4">Volver</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modalDp modal" id="modal5" data-modal-id="modal5">
+            <div class="modal-content container">
+                <div class="modalContent">
+                    <h3>Litigios, Arbitraje y Negociación.</h3>
+                    <p>
+                        Esta área de especialización es transversal a todas las demás áreas y se encarga de asesorar y
+                        representar a los clientes en los diversos asuntos judiciales que se tramiten ante los órganos
+                        jurisdiccionales, como demandas de contenido civil, mercantil, contencioso administrativo,
+                        constitucional, revisión y redacción de libelos de demanda, contestación, preparación y
+                        promoción de pruebas, informes, apelaciones, fundamentaciones y demás escritos en cada etapa del
+                        proceso judicial respectivo. Asimismo, asesora y representa a los clientes en los procesos de
+                        arbitraje que se encuentren en proceso ante las diversas cámaras de arbitraje del país. En estos
+                        términos, también asesoramos y representamos a nuestros clientes en los diversos métodos
+                        alternativos de resolución de conflictos y negociación ante la contraparte, ofreciendo
+                        soluciones eficientes, garantizando siempre el resguardo de los derechos e intereses de nuestros
+                        clientes.
+                    </p>
+                    <span class="close" data-modal-id="modal5">Volver</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modalDp modal" id="modal6" data-modal-id="modal6">
+            <div class="modal-content container">
+                <div class="modalContent">
+                    <h3>Corporativo</h3>
+                    <p>
+                        AZA asesorará a nuestros clientes en todas las materias relacionadas con el derecho corporativo
+                        como revisión y redacción de contratos públicos o privados, derecho regulatorio y compliance,
+                        revisión y redacción de manuales internos, auditoría de libros, cuentas y otros documentos,
+                        análisis y asesoría en la estructura organizativa de la empresa, entre otras.
+                    </p>
+                    <span class="close" data-modal-id="modal6">Volver</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="contactSection">
+            <div class="subcontactSection">
+                <h4 class="tittleSection">CONTANTO</h4>
+                <h2 class="subTittleServ">Comunicate con nosotros</h2>
+            </div>
+            <div class="container formu">
+                <div class="form-container">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre:">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" id="edad" name="email" required placeholder="Email:">
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" id="altura" name="altura" step="0.01" required placeholder="Teléfono:">
+                      </div>
+                      <div class="form-group">
+                        <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Mensaje:"></textarea>
+                      </div>
+                      <div class="form-group form-groupButton">
+                        <button type="submit">Enviar</button>
+                      </div>
+                    </form>
+                 </div>
+            </div>
+        </section>
+    </main>
 
 
 
@@ -66,9 +356,23 @@
 
 
 
+
+
+
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="index.js"></script>
+
+
+
 </body>
 
 </html>
