@@ -58,9 +58,11 @@ nav {
 .frontPageimg {
     width: 92%;
     margin-top: 80px;
-    box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px #5c5c5c;
+}
+
+.frontPageimgMobile {
+    display: none;
 }
 
 .frontPagebackgroud {
@@ -71,7 +73,7 @@ nav {
 .boxButtonsFront {
     position: absolute;
     top: 250px;
-    
+
 
 
     display: flex;
@@ -130,6 +132,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding-block: 50px;
+    margin-top: 70px;
 }
 
 .tittleSection {
@@ -143,11 +146,9 @@ nav {
 
 .SubContainHistory p {
     margin-inline: 100px;
-    margin-block: 50px;
     font-size: 24px;
     text-align: center;
-    margin-top: 0px;
-    padding-block: 50px;
+    margin-bottom: 0%;
 }
 
 .firmaSection {
@@ -184,6 +185,10 @@ nav {
     font-size: 24px;
     text-align: center;
     margin-top: 0px;
+}
+
+.lineMovile {
+    display: none !important;
 }
 
 .ServiceSection {
@@ -268,7 +273,13 @@ swiper-slide a {
 .modal .close {
     cursor: pointer;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    text-shadow: 4px 4px 6px #cecccc;
+}
+
+.modal .close:hover {
+    font-weight: 600;
 }
 
 .modalContent {
@@ -517,11 +528,25 @@ footer {
 
 .redes img {
     width: 90px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .redes a img:hover {
     opacity: 0.7;
+}
+
+.imgMap {
+    width: 60px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.imgMap:hover {
+
+    transform: rotate(20deg);
+    /* Puedes ajustar el ángulo según tus preferencias */
+    transition: transform 0.5s;
+    /* Agrega una transición suave para una animación agradable */
 }
 
 /* ----------------------- */
@@ -601,17 +626,16 @@ footer {
 
 .closeCustomModal {
     display: block;
-    /* Para que sea un bloque en lugar de un elemento en línea */
     text-align: center;
-    /* Para centrar el texto "Volver" */
     cursor: pointer;
     margin-top: 20px;
-    /* Espacio superior para separarlo del párrafo */
+    text-shadow: 4px 4px 6px #cecccc;
+    font-size: 13px;
 }
 
 .closeCustomModal:hover {
     transform: scale(1.1);
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 
@@ -695,7 +719,7 @@ footer {
         margin: 0px;
     }
 
-   
+
     .tittleFooter {
         margin-bottom: 50px;
     }
@@ -706,6 +730,11 @@ footer {
 
     .tittleFooter p {
         font-size: 18px;
+    }
+
+    .imgMap {
+        width: 50px;
+
     }
 
 }
@@ -816,19 +845,16 @@ footer {
     .imgModalProfile {
         width: 30%;
     }
-    
+
     .custom-modal h3 {
         font-family: 'Jomolhari', serif;
         font-size: 20px;
     }
-    
+
     .custom-modal p {
         font-size: 15px;
     }
 
-    /* .subContainFooter {
-        padding: 0%;
-    } */
 
     .tittleFooter {
         margin-bottom: 50px;
@@ -856,5 +882,316 @@ footer {
 
     footer {
         margin-top: 150px;
+    }
+
+    .imgMap {
+        width: 45px;
+
+    }
+}
+
+
+@media screen and (max-width: 1366px) {
+
+    .boxButtonsFront {
+        position: absolute;
+        top: 205px;
+    }
+
+    .boxButtonsFront h2 {
+        font-size: 80px;
+        font-weight: 100;
+        font-family: 'Jomolhari', serif;
+    }
+
+    .boxButtonsFront p {
+        font-size: 15px;
+    }
+
+    .ButtonsFront button {
+        font-size: 15px;
+
+        padding: 6px;
+        padding-inline: 15px;
+        margin-inline: 1px;
+
+        box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+
+    }
+
+
+    .subContainFooter {
+        padding-block: 20px;
+
+    }
+
+    .tittleFooter h2 {
+        font-size: 80px;
+
+    }
+
+    .tittleFooter p {
+        font-size: 15px;
+        margin-top: -20px;
+        margin-bottom: 0%;
+
+    }
+
+    .addresFooter P {
+        font-size: 15px;
+        margin-inline: 80px;
+        padding-inline: 80px;
+    }
+
+
+    .addresFooter a {
+        font-size: 15px;
+    }
+
+    .redes img {
+        width: 50px;
+        margin: 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .historySection {
+        margin-top: 80px;
+    }
+
+    .boxButtonsFront {
+        position: absolute;
+        top: 175px;
+    }
+
+    .boxButtonsFront h2 {
+        font-size: 60px;
+    }
+
+    .boxButtonsFront p {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .frontPage {
+        height: 70vh;
+    }
+
+    .frontPageimg {
+        display: none;
+    }
+
+    .frontPageimgMobile {
+        display: block;
+        padding: 40px;
+    }
+
+    .boxButtonsFront {
+        position: absolute;
+        top: 300px;
+    }
+
+    .boxButtonsFront p {
+        font-size: 25px;
+    }
+
+    .boxButtonsFront h2 {
+        font-size: 130px;
+
+    }
+
+    .ButtonsFront button {
+        font-size: 23px;
+        margin: 3px;
+        padding-block: 10px;
+    }
+
+    .historySection {
+        background-size: cover;
+        margin-top: 300px;
+    }
+
+    .firmaSection {
+        margin-top: 200px;
+    }
+
+    .firmaSection {
+        margin-top: 120px;
+        background-size: contain;
+    }
+
+    .txtFirm {
+        margin-inline: 50px;
+    }
+
+    swiper-slide {
+        height: 500px;
+        width: 350px;
+    }
+
+    .ServiceSection {
+        margin-top: 110px;
+    }
+
+    .modalContent {
+        padding-inline: 30px;
+    }
+
+    .modalContent p {
+        text-align: justify;
+    }
+
+    .cardsProfileBox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cardProfile {
+        width: 500px !important;
+    }
+
+    .card-body h3 {
+        font-size: 30px;
+    }
+
+    .card-body .card-text {
+        font-size: 25px;
+    }
+
+    .historySection {
+        margin-top: 450px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .frontPage {
+        height: 90vh;
+    }
+
+    .frontPageimgMobile {
+        padding: 20px;
+        
+        size: 100% !important;
+    }
+
+    .frontPagebackgroud {
+        height: 100% !important;
+    }
+
+    .boxButtonsFront {
+        top: 120px;
+    }
+
+    .boxButtonsFront h2 {
+        font-size: 60px;
+    }
+
+    .boxButtonsFront p {
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .ButtonsFront button {
+        font-size: 12px;
+        padding-block: 6px;
+        padding-inline: 15px;
+    }
+
+    .historySection {
+        margin-top: 20px;
+    }
+
+    .SubContainHistory p {
+        margin-inline: 0px;
+    }
+
+    .firmaSection {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .subfirmaSection   {
+        margin-top: 0px;
+        margin-bottom: 15px !important;
+    }
+
+    .txtFirm {
+        margin-inline: 0px;
+    }
+
+    .ServiceSection {
+        margin-top: 70px;
+    }
+
+    .subTittleServ {
+        padding-inline: 20px;
+        text-align: center;
+    }
+
+    .lineMovileBox {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .lineMovile {
+        display: block !important;
+    }
+
+    .subTittleServ {
+        margin-bottom: 20px;
+    }
+
+    swiper-slide {
+        height: 470px;
+        width: 300px;
+    }
+
+    .contactSection {
+        padding-inline: 0px;
+    }
+
+    .formu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 380px;
+        margin-inline: 0px !important;
+        
+    }
+
+    .profileSection {
+        margin-top: 25px;
+    }
+
+    .subcontactSection {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    .addresFooter p{
+        margin-inline: 5px;
+        padding-inline: 5px;
+    }
+
+    .tittleCardProfile {
+        font-size: 20px !important;
+    }
+
+    .card-body p {
+        font-size: 15px !important;
     }
 }
