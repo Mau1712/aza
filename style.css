@@ -58,9 +58,9 @@ nav {
 .frontPageimg {
     width: 92%;
     margin-top: 80px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
 }
 
 .frontPagebackgroud {
@@ -71,6 +71,7 @@ nav {
 .boxButtonsFront {
     position: absolute;
     top: 250px;
+    
 
 
     display: flex;
@@ -134,12 +135,10 @@ nav {
 .tittleSection {
     font-family: 'Jomolhari', serif;
     font-weight: 100;
-
 }
 
 .SubContainHistory h2 {
     font-weight: 600;
-
 }
 
 .SubContainHistory p {
@@ -182,7 +181,6 @@ nav {
 
 .txtFirm {
     margin-inline: 100px;
-
     font-size: 24px;
     text-align: center;
     margin-top: 0px;
@@ -203,8 +201,6 @@ swiper-container {
 }
 
 swiper-slide {
-    /* background-position: center;
-    background-size: cover; */
     width: 350px;
     height: 500px;
     display: flex;
@@ -270,13 +266,9 @@ swiper-slide a {
 }
 
 .modal .close {
-    position: absolute;
-    top: 80%;
-    left: 46%;
-    font-size: 20px;
     cursor: pointer;
     padding: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .modalContent {
@@ -298,22 +290,25 @@ swiper-slide a {
 }
 
 /* -------------------------------- */
-.contactSection{
+
+.contactSection {
     margin-top: 150px;
     margin-bottom: 100px;
     padding: 50px;
     background-image: url(/img/pexels-pavel-danilyuk-5520327\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
-    
+    /* background-position: left; */
+
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  color: #E7E7E7; /* Cambia #ff0000 al color que desees */
+    color: #E7E7E7;
+    caret-color: #E7E7E7;
+    font-size: 20px;
 }
 
 .subcontactSection {
@@ -322,70 +317,544 @@ textarea {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .form-container {
-    width: 500px;
+    width: 520px;
     margin: 0 auto;
     background-image: url(/img/rectangleContact.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    padding: 80px;
+    background-size: cover;
+    padding: 60px;
     border-radius: 8px;
-  }
 
-  
-  .form-group {
+}
+
+
+.form-group {
     margin-bottom: 35px;
-    
-  }
 
-  .form-groupButton {
-    margin-bottom: 0%;
-    margin-top: 5px;
-  }
+}
 
 
-  .form-group input {
+.form-group input {
     width: 100%;
     padding: 5px;
     border: 0px;
     border-bottom: 2px solid #ccc;
     border-radius: 3px;
     background-color: transparent;
-  }
+}
 
-  .form-group input::placeholder {
+.form-group input::placeholder {
     color: #E7E7E7;
-  }
+}
 
-  .form-group input:focus {
+.form-group input:focus {
     outline: none;
-  }
+}
 
-  .form-group textarea {
+.form-group textarea {
     width: 100%;
     padding: 5px;
     border: 0px;
     border-bottom: 2px solid #ccc;
     background-color: transparent;
-  }
+}
 
-  .form-group textarea::placeholder {
+.form-group textarea::placeholder {
     color: #E7E7E7;
-  }
+}
 
-  .form-group textarea:focus {
+.form-group textarea:focus {
     outline: none;
-  }
+}
 
-  .form-group button {
+.form-groupButton button {
     display: block;
     width: 100%;
     padding-block: 20px;
     background-color: #E7E7E7;
     color: #1E1E1E;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-  }
+    font-size: 20px;
+
+}
+
+.form-group button:hover {
+    background-color: #2A2528;
+    color: #E7E7E7;
+}
+
+.profileSection {
+    margin-top: 200px;
+}
+
+.cardsProfileBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardProfile {
+    padding: 20px;
+    margin: 25px;
+    width: 60% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+.cardProfile:hover {
+    background-image: url(/img/backgroundCardHover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #E7E7E7;
+    border-color: #E7E7E7;
+}
+
+.cardProfile:hover .line {
+    background: linear-gradient(to right, transparent, #E7E7E7, transparent);
+}
+
+
+
+.imgBoxCard {
+    padding: 80px;
+    padding-bottom: 0% !important;
+    border-top-right-radius: 40px !important;
+    border-top-left-radius: 40px !important;
+    align-items: center;
+}
+
+.imgBoxCard img {
+    border-top-right-radius: 40px !important;
+    border-top-left-radius: 40px !important;
+
+
+    box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.tittleCardProfile {
+    font-family: 'Jomolhari', serif;
+}
+
+
+
+.line {
+    display: block;
+    width: 30%;
+    /* O ajusta el ancho que desees */
+    height: 2px;
+    /* Ajusta el grosor de la línea */
+    background: linear-gradient(to right, transparent, black, transparent);
+    /* Estilo de la línea con puntas transparentes */
+    margin-top: 50px;
+    /* Ajusta el espacio entre la línea y los divs */
+    margin-bottom: 25px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 250px;
+    background-color: #1E1E1E;
+    color: #E7E7E7;
+}
+
+.subContainFooter {
+    padding-block: 50px;
+    margin-block: 50px;
+}
+
+.tittleFooter h2 {
+    font-size: 150px;
+
+}
+
+.tittleFooter p {
+    font-size: 25px;
+    margin-top: -25PX;
+    margin-bottom: 25PX;
+
+}
+
+.addresFooter P {
+    font-size: 25px;
+    margin-inline: 80px;
+    padding-inline: 80px;
+}
+
+.addresFooter a {
+    text-decoration: none;
+    color: #E7E7E7;
+    font-size: 25px;
+}
+
+.redes {
+    margin-top: 25px;
+}
+
+.redes img {
+    width: 90px;
+    margin: 20px;
+}
+
+.redes a img:hover {
+    opacity: 0.7;
+}
+
+/* ----------------------- */
+
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow: auto;
+    padding: 20px;
+
+}
+
+
+.custom-modal>div {
+    background: #fff;
+    max-width: 900px;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-modal h3 {
+    font-family: 'Jomolhari', serif;
+
+}
+
+.custom-modal p {
+    text-align: justify;
+    font-size: 20px;
+    margin: 10px 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+/* Estilización de la barra de desplazamiento */
+.custom-modal p::-webkit-scrollbar {
+    width: 5px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+.custom-modal p::-webkit-scrollbar-thumb {
+    background-color: #2a25289c;
+    /* Color de la barra de desplazamiento */
+    border-radius: 4px;
+    /* Bordes redondeados de la barra */
+}
+
+.custom-modal p::-webkit-scrollbar-track {
+    background-color: #E7E7E7;
+    /* Color de fondo de la barra de desplazamiento */
+}
+
+.imgModalProfile {
+    max-width: 50%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-top: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.closeCustomModal {
+    display: block;
+    /* Para que sea un bloque en lugar de un elemento en línea */
+    text-align: center;
+    /* Para centrar el texto "Volver" */
+    cursor: pointer;
+    margin-top: 20px;
+    /* Espacio superior para separarlo del párrafo */
+}
+
+.closeCustomModal:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+}
+
+
+
+/* Resposive */
+
+@media screen and (max-width: 1600px) {
+
+    .boxNav {
+        padding-inline: 80px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .frontPageimg {
+        margin-top: 60px;
+    }
+
+    .boxButtonsFront {
+        position: absolute;
+        top: 205px;
+    }
+
+    .boxButtonsFront h2 {
+        font-size: 100px;
+    }
+
+    .boxButtonsFront p {
+        font-size: 20px;
+    }
+
+    .ButtonsFront button {
+        font-size: 20px;
+        padding: 8px;
+        padding-inline: 12px;
+    }
+
+    .historySection {
+        margin-top: 270px;
+    }
+
+    .subTittle {
+        margin-top: 30px;
+    }
+
+    .subcontactSection {
+        margin-bottom: 40px;
+    }
+
+    .form-container {
+        width: 500px;
+        padding: 40px;
+        border-radius: 8px;
+
+    }
+
+    .cardProfile {
+        width: 35% !important;
+
+    }
+
+    .imgBoxCard {
+        padding: 50px;
+        padding-bottom: 0% !important;
+        border-top-right-radius: 40px !important;
+        border-top-left-radius: 40px !important;
+        align-items: center;
+    }
+
+    .line {
+        margin-bottom: 20px;
+    }
+
+    .modalContent h3 {
+        padding: 0px;
+    }
+
+    .modalContent p {
+        margin: 0px;
+    }
+
+   
+    .tittleFooter {
+        margin-bottom: 50px;
+    }
+
+    .tittleFooter h2 {
+        font-size: 100px;
+    }
+
+    .tittleFooter p {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 1439px) {
+
+    .boxNav {
+        padding-inline: 80px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding-inline: auto !important;
+    }
+
+
+    .frontPageimg {
+        width: 92%;
+        margin-top: 50px !important;
+    }
+
+    .frontPageimg {
+        margin-top: 50px;
+    }
+
+    .tittleSection {
+        font-size: 18px;
+    }
+
+    .SubContainHistory h2 {
+        font-weight: 600;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 0%;
+    }
+
+    .SubContainHistory p {
+        font-size: 16px;
+        padding-block: 50px;
+    }
+
+    .subTittle {
+        font-size: 22px;
+    }
+
+    .firmaSection {
+        margin-top: 60px;
+    }
+
+    .subfirmaSection {
+        margin-block: 80px;
+    }
+
+    .txtFirm {
+        font-size: 16px;
+    }
+
+    .firmaTittle {
+        margin-top: 20px;
+    }
+
+    .subTittleServ {
+        font-size: 22px;
+    }
+
+    .mySwiper {
+        padding-top: 5px !important;
+    }
+
+    swiper-slide {
+        width: 260px;
+        height: 370px;
+    }
+
+    .tit {
+        font-size: 15px !important;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 15px;
+    }
+
+
+    .form-groupButton button {
+        padding-block: 15px;
+        font-size: 18px;
+    }
+
+    .profileSection {
+        margin-top: 150px;
+    }
+
+    .tittleCardProfile {
+        font-size: 20px;
+    }
+
+    .modalContent p {
+        font-size: 16px;
+    }
+
+    .custom-modal>div {
+        max-width: 70%;
+    }
+
+    .imgModalProfile {
+        width: 30%;
+    }
+    
+    .custom-modal h3 {
+        font-family: 'Jomolhari', serif;
+        font-size: 20px;
+    }
+    
+    .custom-modal p {
+        font-size: 15px;
+    }
+
+    /* .subContainFooter {
+        padding: 0%;
+    } */
+
+    .tittleFooter {
+        margin-bottom: 50px;
+    }
+
+    .tittleFooter h2 {
+        font-size: 100px;
+    }
+
+    .tittleFooter p {
+        font-size: 15px;
+    }
+
+    .addresFooter p {
+        font-size: 18px;
+    }
+
+    .addresFooter a {
+        font-size: 18px;
+    }
+
+    .redes img {
+        width: 60px;
+    }
+
+    footer {
+        margin-top: 150px;
+    }
+}

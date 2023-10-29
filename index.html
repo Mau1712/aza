@@ -24,7 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
 
-
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Aza Consultora</title>
 </head>
@@ -106,7 +107,7 @@
 
         <section class="firmaSection container-fluid">
             <div class=" subfirmaSection container">
-                <h4 class="tittleSection">FIRMA</h4>
+                <h4 class="tittleSection firmaTittle">FIRMA</h4>
                 <div class="subTittleBox">
                     <h3 class="subTittle">Garantizamos resultados</h3>
                     <p class="txtFirm">
@@ -120,7 +121,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="subTittleBox">
                     <h3 class="subTittle">Nuestro grupo de expertos</h3>
                     <p class="txtFirm">
                         Contar con los servicios jurídicos de AZA brinda un plus para todos los clientes, ya que
@@ -150,7 +151,7 @@
 
                 <swiper-container class="mySwiper" autoplay-delay="2500" autoplay-disable-on-interaction="false"
                     pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-                    slides-per-view="auto" coverflow-effect-rotate="25" coverflow-effect-stretch="0"
+                    slides-per-view="auto" coverflow-effect-rotate="25" coverflow-effect-stretch="5"
                     coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
 
                     <swiper-slide>
@@ -206,7 +207,6 @@
                         </a>
                     </swiper-slide>
                 </swiper-container>
-            </div>
             </div>
         </section>
 
@@ -326,27 +326,176 @@
             </div>
             <div class="container formu">
                 <div class="form-container">
-                    <form>
-                      <div class="form-group">
-                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre:">
-                      </div>
-                      <div class="form-group">
-                        <input type="email" id="edad" name="email" required placeholder="Email:">
-                      </div>
-                      <div class="form-group">
-                        <input type="tel" id="altura" name="altura" step="0.01" required placeholder="Teléfono:">
-                      </div>
-                      <div class="form-group">
-                        <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Mensaje:"></textarea>
-                      </div>
-                      <div class="form-group form-groupButton">
-                        <button type="submit">Enviar</button>
-                      </div>
+                    <form id="form">
+                        <div class="form-group field">
+                            <input type="text" id="nombre" name="nombre" required placeholder="Nombre:">
+                        </div>
+                        <div class="form-group field">
+                            <input type="email" id="email" name="email" required placeholder="Email:">
+                        </div>
+                        <div class="form-group field">
+                            <input type="tel" id="tel" name="tel" step="0.01" required placeholder="Teléfono:"> 
+                        </div>
+                        <div class="form-group field">
+                            <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Mensaje:"></textarea>
+                        </div>
+                        <div class="form-group form-groupButton">
+                            <button type="submit" id="button" value="Send Email">Enviar</button>
+                        </div>
                     </form>
-                 </div>
+                </div>
             </div>
         </section>
+
+
+
+        <section class="profileSection">
+            <div class="subcontactSection">
+                <h4 class="tittleSection">NOSOTROS</h4>
+                <h2 class="subTittleServ">Nuestro grupo de expertos</h2>
+            </div>
+
+            <div class="container cardsProfileBox">
+                <a href="#" class="card cardProfile" data-modal-id="profileOne" style="width: 18rem;">
+                    <div class="imgBoxCard">
+                        <img src="/img/el.png" class="card-img-top" alt="">
+                    </div>
+                    <span class="line"></span>
+                    <div class="card-body">
+                        <h3 class="card-title tittleCardProfile">Ricardo Araujo Bravo</h3>
+                        <p class="card-text">Socio</p>
+                    </div>
+                </a>
+
+                <a href="#" class="card cardProfile" data-modal-id="profileTwo" style="width: 18rem;">
+                    <div class="imgBoxCard">
+                        <img src="/img/ella.png" class="card-img-top" alt="">
+                    </div>
+                    <span class="line"></span>
+                    <div class="card-body">
+                        <h3 class="card-title tittleCardProfile">Paula Zambrano</h3>
+                        <p class="card-text">Socio</p>
+                    </div>
+                </a>
+
+
+                <div id="profileOneCustomModal" class="custom-modal" style="display: none;">
+                    <div>
+                        <img class="img-fluid imgModalProfile" src="./img/el_modal.png" alt="">
+                        <span class="line"></span>
+                        <h3>Ricardo Araujo Bravo</h3>
+                        <h6>Socio</h6>
+                        <p>
+                            Abogado egresado de la Universidad Católica Andrés Bello (UCAB), especialista en Derecho
+                            Administrativo y actualmente, alumno del Doctorado en Derecho de la misma casa de estudio.
+                            <br><br>
+                            Ricardo tiene más de 11 años de experiencia en la función pública, comenzando su ejercicio
+                            profesional en el Área Judicial de la Sindicatura Municipal del Municipio Baruta
+                            (2012-2015), escalando así a la jefatura de la Unidad de Asuntos Administrativos y
+                            Constitucionales de la Sindicatura Municipal del Municipio Sucre (2016-2017), así como
+                            ejerciendo el cargo de Síndico Procurador Municipal del Municipio El Hatillo (2018-2023).
+                            También es Miembro de la Unión Iberoamericana de Municipalistas (UIM).
+                            <br><br>
+                            Especializado así en el conocimiento del derecho público en general, constitucional,
+                            urbanístico, administrativo, contrataciones públicas, procedimientos administrativos,
+                            tributario, redacción de instrumentos jurídicos: ordenanzas, decretos y resoluciones,
+                            asesoría tanto a los particulares como a los órganos y entes de la administración pública,
+                            derecho municipal, tramitación de procesos judiciales y arbitraje, entre otras áreas de
+                            especialización.
+                            <br><br>
+                            Condecoración Orden José Miguel José Sanz en su primera clase, otorgada por el Ilustre
+                            Colegio de Abogados de Caracas (2023).
+                            Premio Municipal El Hatillo “Dr. Pedro Alí Zoppi” otorgada por el Concejo Municipal de El
+                            Hatillo (2022).
+                            Orden al Buen Ciudadano por parte del Consejo Legislativo del Estado Miranda (2021).
+                            Reconocimiento al Mérito por el Día Nacional del Abogado por parte del Concejo Municipal El
+                            Hatillo (2020).
+
+
+                        </p>
+
+                        <span class="closeCustomModal" style="cursor: pointer;">VOLVER</span>
+                    </div>
+                </div>
+
+                <div id="profileTwoCustomModal" class="custom-modal " style="display: none;">
+                    <div>
+                        <img class="img-fluid imgModalProfile" src="./img/ella_modal.png" alt="">
+                        <span class="line"></span>
+                        <h3>Paula Zambrano</h3>
+                        <h6>Socio</h6>
+                        <p>
+                            Abogada egresada de la Universidad Católica Andrés Bello (UCAB), especialista en Derecho
+                            Administrativo de la misma casa de estudios y especialista en Derecho Procesal de la
+                            Universidad
+                            Central de Venezuela (UCV).
+                            <br><br>
+                            Paula se ha desarrollado profesionalmente a nivel judicial y municipal en las áreas del
+                            derecho público, administrativo, constitucional, tributario, civil, urbanístico, etc.
+                            Ejerció como funcionaria del Poder Judicial donde se desempeñó como abogado relator de
+                            sentencias. Asesora del Servicio Nacional de Contrataciones a nivel de procedimientos
+                            administrativos y licitaciones, Procuradora Judicial del Municipio Baruta durante 7 años e
+                            Instructora de la Academia de Policía de Baruta.
+                            <br><br>
+                            Encargada del control y seguimiento de juicios contra entes públicos, empresas y personas
+                            naturales en todas las materias e instancias, incluyendo ante el TSJ. Gerente de personal
+                            administrativo, abogados, pasantes y asesores bajo mi cargo. Realizó impugnaciones de leyes
+                            y ordenanzas y elaboró dictámenes en las más variadas materias, así como también redactó
+                            proyectos de ordenanzas y reglamentos.
+                            <br><br>
+                            Asesora de las Direcciones de la Alcaldía y Concejo Municipal del Municipio Baruta y demás
+                            entes adscritos. En el ámbito privado, asesoría jurídica y dictámenes en materia
+                            urbanística, mercantil, municipal, derecho notarial y registral a empresas, entes públicos y
+                            personas naturales. Asistencia judicial en asuntos contenciosos, interposición de recursos
+                            administrativos, trámites sucesorales, otros de variada naturaleza ante Registros Públicos,
+                            Notarías, Alcaldía, Ministerios, Gobernaciones, Servicios Autónomos.
+                            <br><br>
+                            Reconocimiento del Mérito por el Día del Abogado por parte del Concejo Municipal del Hatillo
+                            (2021).
+                            <br><br>
+                            Orden al Mérito por parte de la Policía de Baruta (2014).
+                            Botón al Mérito por años de servicios por parte de la Alcaldía de Baruta (2014).
+                            <br><br>
+                            Autora del Libro “Las Misiones en la Organización Administrativa Venezolana” análisis
+                            crítico jurídico. Editado por la Fundación de Estudios de Derecho Administrativo (2011).
+
+
+                        </p>
+
+                        <span class="closeCustomModal" style="cursor: pointer;">VOLVER</span>
+                    </div>
+                </div>
+        </section>
+
+
+
     </main>
+
+    <footer>
+        <div class="subContainFooter container">
+
+            <div class="tittleFooter">
+                <h2>AZA</h2>
+                <p>ABOGADOS Y ASOCIADOS</p>
+            </div>
+            <div class="addresFooter">
+                <p>
+                     Centro Empresarial La Lagunita, piso 2, oficina 206, urbanización La Lagunita, Municipio El
+                    Hatillo,
+                    1083.
+                </p>
+                <a href="">Términos y conciones</a>
+            </div>
+
+            <div class="redes">
+                <a href=""><img src="/img/redes/Instagram.png" alt=""></a>
+                <a href=""><img src="/img/redes/Linkedin.png" alt=""></a>
+                <a href=""><img src="/img/redes/Facebook.png" alt=""></a>
+                <a href=""><img src="/img/redes/bandcamp.png" alt=""></a>
+            </div>
+
+        </div>
+    </footer>
 
 
 
@@ -365,14 +514,20 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
+    <!-- Mail.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('hYvqOg5wQIUBfnCsI')
+    </script>
 
-
-
+    <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="contact.js"></script>
     <script src="index.js"></script>
-
-
-
 </body>
 
 </html>
