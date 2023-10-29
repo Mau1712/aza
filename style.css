@@ -306,7 +306,7 @@ swiper-slide a {
     margin-top: 150px;
     margin-bottom: 100px;
     padding: 50px;
-    background-image: url(/img/pexels-pavel-danilyuk-5520327\ 1.png);
+    background-image: url(img/pexels-pavel-danilyuk-5520327\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: left; */
@@ -334,7 +334,7 @@ textarea {
 .form-container {
     width: 520px;
     margin: 0 auto;
-    background-image: url(/img/rectangleContact.png);
+    background-image: url(img/rectangleContact.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px;
@@ -424,7 +424,7 @@ textarea {
 
 
 .cardProfile:hover {
-    background-image: url(/img/backgroundCardHover.png);
+    background-image: url(img/backgroundCardHover.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #E7E7E7;
