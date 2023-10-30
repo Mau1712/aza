@@ -130,7 +130,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(img/BackgroundHistory.png);
+    background-image: url(./img/BackgroundHistory.png);
 }
 
 
@@ -166,7 +166,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(img/backgroundFirma.png);
+    background-image: url(./img/backgroundFirma.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -314,7 +314,11 @@ swiper-slide a {
     margin-top: 150px;
     margin-bottom: 100px;
     padding: 50px;
+<<<<<<< HEAD
     background-image: url(img/backGroundContact.png);
+=======
+    background-image: url(./img/pexels-pavel-danilyuk-5520327\ 1.png);
+>>>>>>> db8780eb9ebc26c128a147036aaaf7db1d33d8ef
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: left; */
@@ -342,7 +346,7 @@ textarea {
 .form-container {
     width: 520px;
     margin: 0 auto;
-    background-image: url(img/rectangleContact.png);
+    background-image: url(./img/rectangleContact.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px;
@@ -432,7 +436,7 @@ textarea {
 
 
 .cardProfile:hover {
-    background-image: url(img/backgroundCardHover.png);
+    background-image: url(./img/backgroundCardHover.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #E7E7E7;
@@ -1270,6 +1274,7 @@ footer {
     .card-body p {
         font-size: 15px !important;
     }
+<<<<<<< HEAD
 
     .imgBoxCard {
         padding: 10px;
@@ -1336,3 +1341,6 @@ footer {
     }
 
 }
+=======
+}
+>>>>>>> db8780eb9ebc26c128a147036aaaf7db1d33d8ef
