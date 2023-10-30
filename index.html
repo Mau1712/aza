@@ -27,6 +27,9 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Aza Consultora</title>
 </head>
 
@@ -34,7 +37,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid boxNav">
             <a class="navbar-brand" href="#">AZA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            <button class="navbar-toggler btnNavDest" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,18 +61,61 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="navMobile">
+                <button class="btn btnMenuMobile" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img class="img-fluid imgMenuBurgMobile" src="./img/btnMenuMobile.png" alt=""></button>
+        
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">AZA</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="navItemMobile">
+                                <a class="nav-link" aria-current="page" href="#">Servicios</a>
+                            </li>
+                            <li class="navItemMobile">
+                                <a class="nav-link" aria-current="page" href="#">Historia</a>
+                            </li>
+                            <li class="navItemMobile">
+                                <a class="nav-link" href="#">Firma</a>
+                            </li>
+                            <li class="navItemMobile">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="navItemMobile">
+                                <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
         </div>
+        
+
+        
     </nav>
 
+    
+  
     <header>
         <div class="frontPage">
             <div class="frontPagebackgroud">
                 <img src="./img/Mask group.png" class="img-fluid frontPageimg" alt="...">
-                <img src="./img/Mask group mobile.png" class="img-fluid frontPageimgMobile" alt="...">
+                <img src="./img/How to Draft a Legal Notice.png" class="img-fluid frontPageimgMobile" alt="...">
 
                 <div class="boxButtonsFront">
                     <h2>AZA</h2>
                     <p>ABOGADOS Y ASOCIADOS</p>
+                    <!-- <button class="btnFrontContact">Contáctanos</button> -->
+                    <div class="arrowsDown">
+                        <img class="img-fluid animate__animated animate__flash animate__infinite animate__slower"
+                            src="./img/arrowDown.png" alt="">
+                    </div>
                     <div class="ButtonsFront">
                         <button>Encuéntranos</button>
                         <button>Contáctanos</button>
@@ -145,7 +191,7 @@
         <div class="lineMovileBox">
             <span class="line lineMovile"></span>
         </div>
-        
+
 
         <section class="ServiceSection">
             <div class="subfirmaSection">
@@ -485,7 +531,8 @@
                 <p>ABOGADOS Y ASOCIADOS</p>
             </div>
             <div class="addresFooter">
-                <a href="https://www.google.com/maps/dir//Centro+Empresarial+La+Lagunita,+Caracas+1083,+Miranda,+Venezuela/@10.4227116,-66.8246793,16.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8c2af79180c9b425:0x6c114c5fad288d4a!2m2!1d-66.8227409!2d10.4221735?entry=ttu">
+                <a
+                    href="https://www.google.com/maps/dir//Centro+Empresarial+La+Lagunita,+Caracas+1083,+Miranda,+Venezuela/@10.4227116,-66.8246793,16.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8c2af79180c9b425:0x6c114c5fad288d4a!2m2!1d-66.8227409!2d10.4221735?entry=ttu">
                     <p>
                          Centro Empresarial La Lagunita, piso 2, oficina 206, urbanización La Lagunita, Municipio El
                         Hatillo,
