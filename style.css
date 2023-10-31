@@ -987,6 +987,15 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
     .frontPage {
         height: 70vh;
     }
@@ -1005,11 +1014,16 @@ footer {
         margin-bottom: 20px;
         border-radius: 10px;
         margin-inline: 15px;
+    }
 
+
+    .navItemMobile:hover {
+        background-color: #2A2528;
     }
 
     .navbar-nav {
         margin-top: 20px;
+
     }
 
     .nav-link {
@@ -1019,6 +1033,8 @@ footer {
         font-weight: 600;
         text-align: center;
     }
+
+
 
     .offcanvas-header {
         background-color: #E7E7E7;
@@ -1042,6 +1058,7 @@ footer {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;
+        margin-top: 70px;
     }
 
     .ButtonsFront {
@@ -1073,12 +1090,13 @@ footer {
         margin-top: 300px;
     }
 
-    .firmaSection {
-        margin-top: 200px;
+    .SubContainHistory {
+        margin-top: 150px;
     }
 
+  
     .firmaSection {
-        margin-top: 120px;
+        margin-top: 70px;
         background-size: contain;
     }
 
@@ -1183,12 +1201,16 @@ footer {
         margin-top: 20px;
     }
 
+    .SubContainHistory {
+        margin-top: 80px;
+    }
+
     .SubContainHistory p {
         margin-inline: 0px;
     }
 
     .firmaSection {
-        margin-top: 50px;
+        margin-top: 70px;
         margin-bottom: 30px;
     }
 

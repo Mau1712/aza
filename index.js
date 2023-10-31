@@ -80,3 +80,15 @@ function closeCustomModal(modalId) {
 }
 
 
+// ---------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function() {
+    var offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasWithBothOptions'));
+    var links = document.querySelectorAll(".navItemMobile .nav-link");
+
+    links.forEach(function(link) {
+        link.addEventListener("click", function() {
+            offcanvas.hide();
+        });
+    });
+});

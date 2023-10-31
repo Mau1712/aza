@@ -36,9 +36,10 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid boxNav">
-            <a class="navbar-brand" href="#">AZA</a>
-            <button class="navbar-toggler btnNavDest" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#anclaBrand">AZA</a>
+            <button class="navbar-toggler btnNavDest" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse naviItems" id="navbarNavDropdown">
@@ -64,8 +65,9 @@
 
             <div class="navMobile">
                 <button class="btn btnMenuMobile" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img class="img-fluid imgMenuBurgMobile" src="./img/btnMenuMobile.png" alt=""></button>
-        
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img
+                        class="img-fluid imgMenuBurgMobile" src="./img/btnMenuMobile.png" alt=""></button>
+
                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                     aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
@@ -75,34 +77,30 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav">
                             <li class="navItemMobile">
-                                <a class="nav-link" aria-current="page" href="#">Servicios</a>
+                                <a class="nav-link" aria-current="page" href="#anclaService">Servicios</a>
                             </li>
                             <li class="navItemMobile">
-                                <a class="nav-link" aria-current="page" href="#">Historia</a>
+                                <a class="nav-link" aria-current="page" href="#anclaHistory">Historia</a>
                             </li>
                             <li class="navItemMobile">
-                                <a class="nav-link" href="#">Firma</a>
+                                <a class="nav-link" aria-current="page" href="#anclaFirma">Firma</a>
                             </li>
                             <li class="navItemMobile">
-                                <a class="nav-link" href="#">Nosotros</a>
+                                <a class="nav-link" aria-current="page" href="#anclaNosotros">Nosotros</a>
                             </li>
                             <li class="navItemMobile">
-                                <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                                <a class="nav-link" aria-current="page" href="#anclaContacto">Contacto</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
         </div>
-        
-
-        
     </nav>
 
-    
-  
-    <header>
+
+
+    <header id="anclaBrand">
         <div class="frontPage">
             <div class="frontPagebackgroud">
                 <img src="./img/Mask group.png" class="img-fluid frontPageimg" alt="...">
@@ -127,6 +125,7 @@
 
 
     <main>
+        <div id="anclaHistory"></div>
         <section class="historySection container-fluid">
             <div class="SubContainHistory container">
                 <h4 class="tittleSection">HISTORIA</h4>
@@ -152,6 +151,7 @@
             </div>
         </section>
 
+        <div id="anclaFirma"></div>
         <section class="firmaSection container-fluid">
             <div class=" subfirmaSection container">
                 <h4 class="tittleSection firmaTittle">FIRMA</h4>
@@ -188,20 +188,24 @@
 
         </section>
 
+        
+
         <div class="lineMovileBox">
             <span class="line lineMovile"></span>
         </div>
 
+       
+        <div id="anclaService"></div>
 
         <section class="ServiceSection">
-            <div class="subfirmaSection">
-                <h4 class="tittleSection">SERVICIOS</h4>
+            <div class="subfirmaSection" >
+                <h4 class="tittleSection" >SERVICIOS</h4>
                 <h2 class="subTittleServ">Consultores en cualquier área legal</h2>
             </div>
 
             <div class="container">
 
-                <swiper-container class="mySwiper" autoplay-delay="2500" autoplay-disable-on-interaction="false"
+                <swiper-container class="mySwiper" autoplay-delay="3500" autoplay-disable-on-interaction="false"
                     pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
                     slides-per-view="auto" coverflow-effect-rotate="25" coverflow-effect-stretch="5"
                     coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
@@ -345,11 +349,7 @@
                         constitucional, revisión y redacción de libelos de demanda, contestación, preparación y
                         promoción de pruebas, informes, apelaciones, fundamentaciones y demás escritos en cada etapa del
                         proceso judicial respectivo. Asimismo, asesora y representa a los clientes en los procesos de
-                        arbitraje que se encuentren en proceso ante las diversas cámaras de arbitraje del país. En estos
-                        términos, también asesoramos y representamos a nuestros clientes en los diversos métodos
-                        alternativos de resolución de conflictos y negociación ante la contraparte, ofreciendo
-                        soluciones eficientes, garantizando siempre el resguardo de los derechos e intereses de nuestros
-                        clientes.
+                        arbitraje que se encuentren en proceso ante las diversas cámaras de arbitraje del país.
                     </p>
                     <span class="close" data-modal-id="modal5">Volver</span>
                 </div>
@@ -371,6 +371,7 @@
             </div>
         </div>
 
+        <div id="anclaContacto"></div>
         <section class="contactSection">
             <div class="subcontactSection">
                 <h4 class="tittleSection">CONTANTO</h4>
@@ -400,7 +401,7 @@
         </section>
 
 
-
+        <div id="anclaNosotros"></div>
         <section class="profileSection">
             <div class="subcontactSection">
                 <h4 class="tittleSection">NOSOTROS</h4>
@@ -582,6 +583,8 @@
 
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
 
     <script src="contact.js"></script>
     <script src="index.js"></script>
