@@ -14,6 +14,10 @@ body {
     display: none;
 }
 
+.imgBoxFrontMobile {
+    display: none;
+}
+
 .naviItems {
     display: flex;
     justify-content: end;
@@ -63,43 +67,27 @@ nav {
     position: relative;
 }
 
-.frontPageimg {
-    width: 92%;
-    margin-top: 80px;
-    border-radius: 6px;
-    /* box-shadow: 0px 0px 5px 0px #5c5c5c; */
-    /* box-shadow: 5px 5px 10px 1px #000000; */
-    /* box-shadow: 5px 5px 15px 0px #000000; */
+.imgBoxFront {
+    height: 80vh;
+    background-image: url(img/Desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    margin-top: 50px;
+    margin-inline: 50px;
     box-shadow: 4px 4px 37px 0px #525151;
 }
 
-.frontPageimgMobile {
-    display: none;
-}
 
 .frontPagebackgroud {
     display: flex;
     justify-content: center;
 }
 
-.boxButtonsFront {
+.ButtonsFront {
     position: absolute;
-    top: 550px;
-    
-    
-    width: 100%;
-    
-    
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.boxButtonsFront img {
-    width: 350px;
+    right: 950px;
+    top: 800px;
 }
 
 
@@ -144,6 +132,8 @@ nav {
 .tittleSection {
     font-family: 'Jomolhari', serif;
     font-weight: 100;
+    margin-block: 50px;
+    text-shadow: 2px 2px 3px #999999;
 }
 
 .SubContainHistory h2 {
@@ -220,7 +210,7 @@ swiper-slide {
     background-image: url(img/backgroundCardHover.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
 
@@ -270,7 +260,7 @@ swiper-slide a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    z-index: 100;
 }
 
 .modal .modal-content {
@@ -284,12 +274,14 @@ swiper-slide a {
 }
 
 .modal .close {
+    position: absolute;
+    top: 0;
+    right: 0;
     cursor: pointer;
     padding: 10px;
-    font-size: 18px;
-    font-weight: 100;
-    text-shadow: 4px 4px 6px #cecccc;
-}
+    margin: 5px;
+    
+} 
 
 .modal .close:hover {
     font-weight: 600;
@@ -319,10 +311,11 @@ swiper-slide a {
     margin-top: 150px;
     margin-bottom: 100px;
     padding: 50px;
-    background-image: url(./img/Diseño\ sin\ título-4.png);
+    background-image: url(./img/contantBbb.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size:cover
-    /* background-position: left; */
+    background-size: cover
+        /* background-position: left; */
 
 }
 
@@ -511,21 +504,14 @@ footer {
     margin-block: 50px;
 }
 
-.tittleFooter h2 {
-    font-size: 150px;
-
-}
-
-.tittleFooter p {
-    font-size: 25px;
-    margin-top: -25PX;
-    margin-bottom: 25PX;
-
+.tittleFooter img {
+    width: 550px;
+    margin-bottom: 25px;
 }
 
 .addresFooter P {
     font-size: 25px;
-    margin-inline: 80px;
+    margin-inline: 100px;
     padding-inline: 80px;
 }
 
@@ -638,24 +624,19 @@ footer {
 }
 
 .closeCustomModal {
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 20px;
-    text-shadow: 4px 4px 6px #cecccc;
-    font-size: 13px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px;
+  font-size: 20px;
 }
-
-.closeCustomModal:hover {
-    transform: scale(1.1);
-    /* font-weight: 600; */
-}
-
 
 
 /* Resposive */
 
+
 @media screen and (max-width: 1600px) {
+
 
     .boxNav {
         padding-inline: 80px;
@@ -669,17 +650,10 @@ footer {
         margin-top: 60px;
     }
 
-    .boxButtonsFront {
+    .ButtonsFront {
         position: absolute;
-        top: 205px;
-    }
-
-    .boxButtonsFront h2 {
-        font-size: 100px;
-    }
-
-    .boxButtonsFront p {
-        font-size: 20px;
+        top: 580px;
+        right: 600px;
     }
 
     .ButtonsFront button {
@@ -687,6 +661,8 @@ footer {
         padding: 8px;
         padding-inline: 12px;
     }
+
+
 
     .historySection {
         margin-top: 270px;
@@ -737,13 +713,7 @@ footer {
         margin-bottom: 50px;
     }
 
-    .tittleFooter h2 {
-        font-size: 100px;
-    }
 
-    .tittleFooter p {
-        font-size: 18px;
-    }
 
     .imgMap {
         width: 50px;
@@ -752,7 +722,26 @@ footer {
 
 }
 
-@media screen and (max-width: 1439px) {
+
+@media screen and (max-width: 1920px) {
+    .ButtonsFront {
+        position: absolute;
+        top: 600px;
+        right: 690px;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .ButtonsFront {
+        position: absolute;
+        top: 460px;
+        right: 530px;
+    }
+
+    .imgBoxFront {
+        height: 70vh;
+    }
 
     .boxNav {
         padding-inline: 80px;
@@ -775,6 +764,7 @@ footer {
 
     .tittleSection {
         font-size: 18px;
+        margin-block: 10px;
     }
 
     .SubContainHistory p {
@@ -863,16 +853,10 @@ footer {
 
 
     .tittleFooter {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
-    .tittleFooter h2 {
-        font-size: 100px;
-    }
-
-    .tittleFooter p {
-        font-size: 15px;
-    }
+   
 
     .addresFooter p {
         font-size: 18px;
@@ -897,7 +881,17 @@ footer {
 }
 
 
+
 @media screen and (max-width: 1366px) {
+    .ButtonsFront {
+        position: absolute;
+        top: 420px;
+        right: 500px;
+    }
+
+    .imgBoxFront {
+        height: 73vh;
+    }
 
     .historySection {
         margin-top: 220px;
@@ -913,21 +907,7 @@ footer {
         margin-top: 37px !important;
     }
 
-    .boxButtonsFront {
-        position: absolute;
-        top: 205px;
-    }
-
-    .boxButtonsFront h2 {
-        font-size: 80px;
-        font-weight: 100;
-        font-family: 'Jomolhari', serif;
-    }
-
-    .boxButtonsFront p {
-        font-size: 15px;
-    }
-
+  
     .ButtonsFront button {
         font-size: 15px;
 
@@ -947,16 +927,9 @@ footer {
 
     }
 
-    .tittleFooter h2 {
-        font-size: 80px;
-
-    }
-
-    .tittleFooter p {
-        font-size: 15px;
-        margin-top: -20px;
-        margin-bottom: 0%;
-
+    .tittleFooter img {
+        width: 350px;
+        margin-bottom: 0px;
     }
 
     .addresFooter P {
@@ -964,6 +937,7 @@ footer {
         margin-inline: 80px;
         padding-inline: 80px;
     }
+    
 
 
     .addresFooter a {
@@ -976,29 +950,53 @@ footer {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .ButtonsFront {
+        position: absolute;
+        top: 400px;
+        right: 445px;
+    }
+}
+
 
 
 @media screen and (max-width: 1024px) {
+
+    .ButtonsFront {
+        position: absolute;
+        top: 350px;
+        right: 375px;
+    }
+
+    .imgBoxFront {
+        height: 70vh;
+    }
+
     .historySection {
         margin-top: 80px;
-    }
-
-    .boxButtonsFront {
-        position: absolute;
-        top: 175px;
-    }
-
-    .boxButtonsFront h2 {
-        font-size: 60px;
-    }
-
-    .boxButtonsFront p {
-        font-size: 12px;
     }
 
 }
 
 @media screen and (max-width: 800px) {
+
+    .imgBoxFront {
+        display: none;
+    }
+
+    .imgBoxFrontMobile {
+        display: block;
+        background-image: url(img/Mobile\ 01.jpg);
+        height: 80vh;
+        background-position: center bottom;
+        background-size: cover;
+        margin-top: 130px;
+        margin-inline: 50px;
+        box-shadow: 0px 0px 13px 0px #868686;
+        display: flex;
+        justify-content: center;
+    }
+
 
     .navbar {
         position: fixed;
@@ -1059,9 +1057,11 @@ footer {
 
 
     .arrowsDown {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 50px;
-        margin-top: 120px;
+        margin-top: 400px;
     }
 
     .frontPageimgMobile {
@@ -1077,20 +1077,7 @@ footer {
         display: none;
     }
 
-    .boxButtonsFront {
-        position: absolute;
-        top: 350px;
-    }
-
-    .boxButtonsFront p {
-        font-size: 25px;
-    }
-
-    .boxButtonsFront h2 {
-        font-size: 130px;
-
-    }
-
+    
     .ButtonsFront button {
         font-size: 23px;
         margin: 3px;
@@ -1099,14 +1086,14 @@ footer {
 
     .historySection {
         background-size: cover;
-        margin-top: 300px;
+        margin-top: 50px;
     }
 
     .SubContainHistory {
-        margin-top: 150px;
+        margin-top: 50px;
     }
 
-  
+
     .firmaSection {
         margin-top: 70px;
         background-size: contain;
@@ -1151,7 +1138,7 @@ footer {
     }
 
     .historySection {
-        margin-top: 450px;
+        margin-top: 280px;
     }
 
     .navMobile {
@@ -1175,9 +1162,20 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .imgBoxFrontMobile {
+        background-position: center bottom;
+        background-size: cover;
+        height: 85vh;
+        margin-top: 95px;
+        margin-inline: 20px;
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 9px 0px #000000;
+    }
 
     .frontPage {
-        height: 90vh;
+        height: 80vh;
     }
 
     .frontPageimgMobile {
@@ -1190,19 +1188,7 @@ footer {
         height: 100% !important;
     }
 
-    .boxButtonsFront {
-        top: 120px;
-    }
-
-    .boxButtonsFront h2 {
-        font-size: 60px;
-    }
-
-    .boxButtonsFront p {
-        font-size: 15px;
-        margin-bottom: 0px;
-    }
-
+   
     .ButtonsFront button {
         font-size: 12px;
         padding-block: 6px;
@@ -1297,8 +1283,10 @@ footer {
 
     .addresFooter p {
         margin-inline: 5px;
-        padding-inline: 5px;
+        padding-inline: 50px;
     }
+
+   
 
     .tittleCardProfile {
         font-size: 20px !important;
@@ -1326,9 +1314,7 @@ footer {
     }
 
 
-    .closeCustomModal {
-        margin-top: 40px;
-    }
+   
 
     .modalContent {
         padding-inline: 0%;
@@ -1340,24 +1326,10 @@ footer {
         display: none;
     }
 
-    .boxButtonsFront {
-        top: 250px;
-    }
-
-    .boxButtonsFront h2 {
-        /* color: #2A2528; */
-        font-size: 100px;
-
-
-    }
-
-    .boxButtonsFront p {
-        font-size: 18px;
-    }
-
+   
     .arrowsDown {
         width: 50px;
-        margin-top: 120px;
+        margin-top: 500px;
     }
 
     .btnNavDest {
@@ -1372,4 +1344,10 @@ footer {
         margin-inline: 10px;
     }
 
+}
+
+@media screen and (max-width: 360px) {
+    .arrowsDown {
+        margin-top: 400px;
+    }
 }
