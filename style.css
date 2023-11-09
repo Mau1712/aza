@@ -29,6 +29,7 @@ body {
 .navbar-brand img {
     width: 55px;
     padding: 5px;
+    margin-block: 5px;
 }
 
 .navbar-brand img:hover {
@@ -80,7 +81,7 @@ nav {
     background-position: center;
     background-size: cover;
     
-    margin-top: 50px;
+    margin-top: 60px;
     margin-inline: 50px;
     box-shadow: 4px 4px 37px 0px #525151;
 }
@@ -516,7 +517,7 @@ footer {
 }
 
 .tittleFooter img {
-    width: 50px;
+    width: 500px;
     margin-bottom: 25px;
 }
 
@@ -595,6 +596,7 @@ footer {
     font-family: 'Jomolhari', serif;
 
 }
+
 
 .custom-modal p {
     text-align: justify;
@@ -740,6 +742,10 @@ footer {
         top: 600px;
         right: 690px;
     }
+
+    .firmaSection {
+        margin-top: 200px;
+    }
 }
 
 
@@ -751,7 +757,7 @@ footer {
     }
 
     .imgBoxFront {
-        height: 70vh;
+        height: 75vh;
     }
 
     .boxNav {
@@ -788,7 +794,7 @@ footer {
     }
 
     .firmaSection {
-        margin-top: 60px;
+        margin-top: 170px;
     }
 
     .subfirmaSection {
@@ -902,6 +908,7 @@ footer {
 
     .imgBoxFront {
         height: 73vh;
+        margin-top: 50px;
     }
 
     .historySection {
@@ -909,7 +916,7 @@ footer {
     }
 
     .firmaSection {
-        margin-top: 80px;
+        margin-top: 170px;
     }
 
     .frontPageimg {
@@ -967,6 +974,10 @@ footer {
         top: 400px;
         right: 445px;
     }
+
+    .imgBoxFront {
+       margin-top: 50px;
+    }
 }
 
 
@@ -997,11 +1008,11 @@ footer {
 
     .imgBoxFrontMobile {
         display: block;
-        background-image: url(img/backMobileLLL.png);
+        background-image: url(img/Mobile\ 01.jpg);
         height: 80vh;
         background-position: center bottom;
         background-size: cover;
-        margin-top: 130px;
+        margin-top: 65px;
         margin-inline: 50px;
         box-shadow: 0px 0px 13px 0px #868686;
         display: flex;
@@ -1150,6 +1161,20 @@ footer {
 
     .historySection {
         margin-top: 280px;
+    }
+
+    .custom-modal>div {
+        max-width: 900px;
+        height: 95vh;
+        margin: 0% auto;
+        padding: 0px;
+        position: relative;
+
+    }
+
+    .imgModalProfile {
+        margin-top: 0%;
+        width: 60%;
     }
 
     .navMobile {
