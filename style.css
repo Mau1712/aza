@@ -118,13 +118,16 @@ nav {
 }
 
 .historySection {
-    margin-top: 350px;
+    margin-top: 180px;
     width: 90%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url(img/BackgroundHistory.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -156,8 +159,8 @@ nav {
 }
 
 .firmaSection {
-    margin-top: 150px;
     width: 90%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,6 +200,7 @@ nav {
 
 .ServiceSection {
     margin-top: 150px;
+    height: 100vh;
 }
 
 .subTittleServ {
@@ -320,9 +324,9 @@ swiper-slide a {
 /* -------------------------------- */
 
 .contactSection {
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 120px;
     padding: 50px;
+    height: 100vh;
     background-image: url(./img/contantBbb.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -677,10 +681,7 @@ footer {
 
 
 
-    .historySection {
-        margin-top: 270px;
-    }
-
+    
     .subTittle {
         margin-top: 30px;
     }
@@ -743,9 +744,7 @@ footer {
         right: 690px;
     }
 
-    .firmaSection {
-        margin-top: 200px;
-    }
+   
 }
 
 
@@ -807,9 +806,7 @@ footer {
         font-size: 22px;
     }
 
-    .firmaSection {
-        margin-top: 170px;
-    }
+    
 
     .subfirmaSection {
         margin-block: 80px;
@@ -925,14 +922,9 @@ footer {
         margin-top: 50px;
     }
 
-    .historySection {
-        margin-top: 220px;
-    }
+   
 
-    .firmaSection {
-        margin-top: 170px;
-    }
-
+   
     .frontPageimg {
         width: 95%;
         height: 77vh;
@@ -1008,10 +1000,7 @@ footer {
         height: 70vh;
     }
 
-    .historySection {
-        margin-top: 80px;
-    }
-
+  
 }
 
 @media screen and (max-width: 800px) {
@@ -1221,7 +1210,7 @@ footer {
         width: 100%;
         padding-inline: 0px;
         margin-inline: 10px;
-        margin-top: 80px;
+        margin-top: 90px;
         box-shadow: none;
         display: flex;
         justify-content: center;
