@@ -750,6 +750,20 @@ footer {
 
 
 @media screen and (max-width: 1440px) {
+
+
+    #anclaNosotros {
+        margin-top: 255px;
+    }
+
+    #anclaHistory {
+        margin-top: 90px;
+    }
+
+    #anclaContacto {
+        margin-top: 20px;
+    }
+
     .ButtonsFront {
         position: absolute;
         top: 460px;
