@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
           if (window.innerWidth <= 480) {
             scrollConfig = {
               'anclaFirma': { top: 50, behavior: 'smooth', block: 'start' },
-              'anclaService': { top: -150, behavior: 'smooth' },
+              'anclaService': { top: -90, behavior: 'smooth' },
               'anclaContacto': { top: -20, behavior: 'smooth' },
               'anclaNosotros': { top: -100, behavior: 'smooth', block: 'start' }
             };
