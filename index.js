@@ -98,53 +98,56 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-  
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-  
-        if (targetElement) {
-          console.log(`Haciendo clic en el enlace hacia ${targetId}`);
-  
-          let scrollConfig;
-  
-          // Configuraciones para pantallas pequeñas (máx. 480px)
-          if (window.innerWidth <= 480) {
-            scrollConfig = {
-              'anclaFirma': { top: 50, behavior: 'smooth', block: 'start' },
-              'anclaService': { top: -90, behavior: 'smooth' },
-              'anclaContacto': { top: -20, behavior: 'smooth' },
-              'anclaNosotros': { top: -100, behavior: 'smooth', block: 'start' }
-            };
-          } else {
-            // Configuraciones para pantallas más grandes
-            scrollConfig = {
-              'anclaFirma': { top: -50, behavior: 'smooth', block: 'start' },
-              'anclaService': { top: -180, behavior: 'smooth' },
-              'anclaContacto': { top: -30, behavior: 'smooth' },
-              'anclaNosotros': { top: 20, behavior: 'smooth', block: 'start' }
-            };
-          }
-  
-          const config = scrollConfig[targetId] || { behavior: 'smooth' };
-  
-          if (config.top !== undefined) {
-            const rect = targetElement.getBoundingClientRect();
-            const offsetTop = window.scrollY + rect.top;
-            window.scrollTo({
-              top: offsetTop + config.top,
-              behavior: config.behavior
-            });
-          } else {
-            targetElement.scrollIntoView(config);
-          }
-  
-          console.log(`Desplazando hacia ${targetId}`);
-        }
-      });
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                console.log(`Haciendo clic en el enlace hacia ${targetId}`);
+
+                let scrollConfig;
+
+                // Configuraciones para pantallas pequeñas (máx. 480px)
+                if (window.innerWidth <= 480) {
+                    scrollConfig = {
+                        'anclaFirma': { top: 50, behavior: 'smooth', block: 'start' },
+                        'anclaService': { top: -90, behavior: 'smooth' },
+                        'anclaContacto': { top: -20, behavior: 'smooth' },
+                        'anclaNosotros': { top: -100, behavior: 'smooth', block: 'start' }
+                    };
+                } else {
+                    // Configuraciones para pantallas más grandes
+                    scrollConfig = {
+                        'anclaFirma': { top: -50, behavior: 'smooth', block: 'start' },
+                        'anclaService': { top: -150, behavior: 'smooth', block: 'center' },
+                        'anclaContacto': { top: -30, behavior: 'smooth' },
+                        'anclaNosotros': { top: -30, behavior: 'smooth', block: 'start' }
+                    };
+                }
+
+                const config = scrollConfig[targetId] || { behavior: 'smooth' };
+
+                if (config.top !== undefined) {
+                    const rect = targetElement.getBoundingClientRect();
+                    const offsetTop = window.scrollY + rect.top;
+                    window.scrollTo({
+                        top: offsetTop + config.top,
+                        behavior: config.behavior
+                    });
+                } else {
+                    targetElement.scrollIntoView(config);
+                }
+
+                console.log(`Desplazando hacia ${targetId}`);
+            } else {
+                console.log(`El elemento con el ID ${targetId} no fue encontrado.`);
+            }
+        });
     });
-  });
+});
+
   
   
   

@@ -2,6 +2,13 @@
     font-family: 'Jost', sans-serif;
 }
 
+.navbar {
+    --bs-navbar-color: black;
+    --bs-navbar-hover-color: #E7E7E7;
+    --bs-navbar-disabled-color: gray;
+}
+
+
 body {
     background-color: white
 }
@@ -47,9 +54,8 @@ body {
 }
 
 .nav-link:hover {
-    color: #E7E7E7;
+    color: #E7E7E7 !important;
 }
-
 
 
 .boxNav {
@@ -120,7 +126,7 @@ nav {
     font-size: 24px;
     text-align: center;
     margin-bottom: 0%;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 .firmaSection {
@@ -724,9 +730,13 @@ footer {
         margin-block: 10px;
     }
 
+    .SubContainHistory {
+        padding-top: 10px;
+    }
+
     .SubContainHistory p {
         font-size: 16px;
-        padding-block: 50px;
+        padding-block: 30px;
     }
 
     .subTittle {
@@ -836,7 +846,7 @@ footer {
 
 @media screen and (max-width: 1366px) {
     .SubContainHistory {
-        margin-top: 50px;
+       padding-top: 10px;
     }
 
     .imgBoxFront {
