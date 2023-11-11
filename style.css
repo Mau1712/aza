@@ -51,6 +51,7 @@ body {
 }
 
 
+
 .boxNav {
     padding-inline: 200px;
     background: #1E1E1E;
@@ -80,7 +81,7 @@ nav {
     background-image: url(img/Desktop.jpg);
     background-position: center;
     background-size: cover;
-    
+
     margin-top: 60px;
     margin-inline: 50px;
     box-shadow: 4px 4px 37px 0px #525151;
@@ -92,43 +93,6 @@ nav {
     justify-content: center;
 }
 
-.ButtonsFront {
-    position: absolute;
-    right: 950px;
-    top: 800px;
-}
-
-
-
-.ButtonsFront button {
-    font-size: 28px;
-    background-color: #d3d0d0;
-    color: #2A2528;
-    padding: 10px;
-    padding-inline: 20px;
-    margin-inline: 5px;
-    border: none;
-    border-radius: 8px;
-}
-
-.ButtonsFront button:hover {
-    background-color: #2A2528;
-    color: #E9E9E9;
-    font-weight: 400;
-}
-
-.historySection {
-    margin-top: 180px;
-    width: 90%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(img/BackgroundHistory.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 .SubContainHistory {
@@ -137,18 +101,18 @@ nav {
     justify-content: center;
     align-items: center;
     padding-block: 50px;
-    margin-top: 70px;
+
 }
 
 .tittleSection {
     font-family: 'Jomolhari', serif;
     font-weight: 100;
-    margin-block: 50px;
     text-shadow: 2px 2px 3px #999999;
 }
 
-.SubContainHistory h2 {
+.SubContainHistory h4 {
     font-weight: 600;
+    margin-top: 60px;
 }
 
 .SubContainHistory p {
@@ -156,18 +120,21 @@ nav {
     font-size: 24px;
     text-align: center;
     margin-bottom: 0%;
+    margin-top: 70px;
 }
 
 .firmaSection {
     width: 90%;
-    height: 100vh;
+    height: 100%;
+    margin-top: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(img/backgroundFirma.png);
+    background-image: url(img/BackgroundHistory.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .subfirmaSection {
@@ -175,6 +142,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 
 }
 
@@ -199,7 +167,7 @@ nav {
 }
 
 .ServiceSection {
-    margin-top: 150px;
+    margin-top: 180px;
     height: 100vh;
 }
 
@@ -258,7 +226,6 @@ swiper-slide a {
     height: 2px;
     /* Grosor de la línea */
     background: linear-gradient(to right, transparent, #1E1E1E, transparent);
-    /* Color del borde con puntas transparentes */
 }
 
 :root {
@@ -296,8 +263,8 @@ swiper-slide a {
     cursor: pointer;
     padding: 10px;
     margin: 5px;
-    
-} 
+
+}
 
 .modal .close:hover {
     font-weight: 600;
@@ -324,15 +291,17 @@ swiper-slide a {
 /* -------------------------------- */
 
 .contactSection {
-    margin-top: 120px;
+    margin-top: 0px;
     padding: 50px;
     height: 100vh;
     background-image: url(./img/contantBbb.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover
-        /* background-position: left; */
-
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="text"],
@@ -346,15 +315,15 @@ textarea {
 
 .subcontactSection {
     display: flex;
-    flex-direction: column;
+
     justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-top: 20px;
+    align-items: end;
+    
 }
 
 .form-container {
-    width: 520px;
+    max-width: 550px;
+    height: auto;
     margin: 0 auto;
     background-image: url(img/rectangleContact.png);
     background-repeat: no-repeat;
@@ -494,7 +463,7 @@ textarea {
 .line {
     display: block;
     width: 30%;
-    /* O ajusta el ancho que desees */
+    /* ajusta el ancho que desees */
     height: 2px;
     /* Ajusta el grosor de la línea */
     background: linear-gradient(to right, transparent, black, transparent);
@@ -557,11 +526,8 @@ footer {
 }
 
 .imgMap:hover {
-
     transform: rotate(20deg);
-    /* Puedes ajustar el ángulo según tus preferencias */
     transition: transform 0.5s;
-    /* Agrega una transición suave para una animación agradable */
 }
 
 /* ----------------------- */
@@ -614,19 +580,16 @@ footer {
 /* Estilización de la barra de desplazamiento */
 .custom-modal p::-webkit-scrollbar {
     width: 5px;
-    /* Ancho de la barra de desplazamiento */
 }
 
 .custom-modal p::-webkit-scrollbar-thumb {
     background-color: #2a25289c;
-    /* Color de la barra de desplazamiento */
     border-radius: 4px;
-    /* Bordes redondeados de la barra */
+    
 }
 
 .custom-modal p::-webkit-scrollbar-track {
     background-color: #E7E7E7;
-    /* Color de fondo de la barra de desplazamiento */
 }
 
 .imgModalProfile {
@@ -641,16 +604,21 @@ footer {
 }
 
 .closeCustomModal {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 15px;
-  font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    font-size: 20px;
 }
 
 
 /* Resposive */
 
+@media screen and (max-width: 1925px) {
+    .firmaSection {
+        margin-top: 25%;
+    }
+}
 
 @media screen and (max-width: 1600px) {
 
@@ -667,28 +635,12 @@ footer {
         margin-top: 60px;
     }
 
-    .ButtonsFront {
-        position: absolute;
-        top: 580px;
-        right: 600px;
-    }
-
-    .ButtonsFront button {
-        font-size: 20px;
-        padding: 8px;
-        padding-inline: 12px;
-    }
 
 
-
-    
     .subTittle {
         margin-top: 30px;
     }
 
-    .subcontactSection {
-        margin-bottom: 40px;
-    }
 
     .form-container {
         width: 500px;
@@ -737,37 +689,12 @@ footer {
 }
 
 
-@media screen and (max-width: 1920px) {
-    .ButtonsFront {
-        position: absolute;
-        top: 600px;
-        right: 690px;
-    }
-
-   
-}
 
 
 @media screen and (max-width: 1440px) {
 
 
-    #anclaNosotros {
-        margin-top: 255px;
-    }
 
-    #anclaHistory {
-        margin-top: 90px;
-    }
-
-    #anclaContacto {
-        margin-top: 20px;
-    }
-
-    .ButtonsFront {
-        position: absolute;
-        top: 460px;
-        right: 530px;
-    }
 
     .imgBoxFront {
         height: 75vh;
@@ -806,11 +733,6 @@ footer {
         font-size: 22px;
     }
 
-    
-
-    .subfirmaSection {
-        margin-block: 80px;
-    }
 
     .txtFirm {
         font-size: 16px;
@@ -845,13 +767,14 @@ footer {
     }
 
 
+
     .form-groupButton button {
         padding-block: 15px;
         font-size: 18px;
     }
 
     .profileSection {
-        margin-top: 150px;
+        margin-top: 120px;
     }
 
     .tittleCardProfile {
@@ -870,6 +793,7 @@ footer {
         width: 30%;
     }
 
+
     .custom-modal h3 {
         font-family: 'Jomolhari', serif;
         font-size: 20px;
@@ -884,7 +808,7 @@ footer {
         margin-bottom: 30px;
     }
 
-   
+
 
     .addresFooter p {
         font-size: 18px;
@@ -911,10 +835,8 @@ footer {
 
 
 @media screen and (max-width: 1366px) {
-    .ButtonsFront {
-        position: absolute;
-        top: 420px;
-        right: 500px;
+    .SubContainHistory {
+        margin-top: 50px;
     }
 
     .imgBoxFront {
@@ -922,29 +844,23 @@ footer {
         margin-top: 50px;
     }
 
-   
 
-   
+    .form-container {
+        width: 400px;
+        padding: 20px;
+
+    }
+
+    .contactSection {
+        height: 100%;
+    }
+
+
     .frontPageimg {
         width: 95%;
         height: 77vh;
         margin-top: 37px !important;
     }
-
-  
-    .ButtonsFront button {
-        font-size: 15px;
-
-        padding: 6px;
-        padding-inline: 15px;
-        margin-inline: 1px;
-
-        box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
-
-    }
-
 
     .subContainFooter {
         padding-block: 20px;
@@ -961,7 +877,7 @@ footer {
         margin-inline: 80px;
         padding-inline: 80px;
     }
-    
+
 
 
     .addresFooter a {
@@ -975,14 +891,9 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    .ButtonsFront {
-        position: absolute;
-        top: 400px;
-        right: 445px;
-    }
 
     .imgBoxFront {
-       margin-top: 50px;
+        margin-top: 50px;
     }
 }
 
@@ -990,17 +901,11 @@ footer {
 
 @media screen and (max-width: 1024px) {
 
-    .ButtonsFront {
-        position: absolute;
-        top: 350px;
-        right: 375px;
-    }
-
     .imgBoxFront {
         height: 70vh;
     }
 
-  
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1045,7 +950,6 @@ footer {
 
     .navItemMobile {
         background-color: #E7E7E7;
-        /* border: solid 1px #E7E7E7; */
         margin-bottom: 20px;
         border-radius: 10px;
         margin-inline: 15px;
@@ -1098,31 +1002,8 @@ footer {
         margin-top: 70px;
     }
 
-    .ButtonsFront {
-        display: none;
-    }
-
-    
-    .ButtonsFront button {
-        font-size: 23px;
-        margin: 3px;
-        padding-block: 10px;
-    }
-
-    .historySection {
-        background-size: cover;
-        margin-top: 50px;
-    }
-
-    .SubContainHistory {
-        margin-top: 50px;
-    }
 
 
-    .firmaSection {
-        margin-top: 70px;
-        background-size: contain;
-    }
 
     .txtFirm {
         margin-inline: 50px;
@@ -1162,9 +1043,6 @@ footer {
         font-size: 25px;
     }
 
-    .historySection {
-        margin-top: 280px;
-    }
 
     .custom-modal>div {
         max-width: 900px;
@@ -1197,6 +1075,13 @@ footer {
         padding-inline: 15px;
     }
 
+    .contactSection {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
 }
 
@@ -1214,54 +1099,41 @@ footer {
         box-shadow: none;
         display: flex;
         justify-content: center;
-        /* box-shadow: 0px 0px 9px 0px #000000; */
     }
 
     .frontPage {
         height: 80vh !important;
         margin-top: 0%;
     }
-   
+
     .frontPagebackgroud {
         height: 0px !important;
-        
+
     }
 
-   
-    .ButtonsFront button {
-        font-size: 12px;
-        padding-block: 6px;
-        padding-inline: 15px;
-    }
-
-    .historySection {
-        margin-top: 20px;
+    .subfirmaSection {
+        margin-top: 150px;
     }
 
     .SubContainHistory {
-        margin-top:130px;
+        margin-top: 0px;
+        padding-top: 10px;
     }
 
     .SubContainHistory p {
         margin-inline: 0px;
-    }
-
-    .firmaSection {
-        margin-top: 70px;
-        margin-bottom: 30px;
-    }
-
-    .subfirmaSection {
         margin-top: 0px;
-        margin-bottom: 15px !important;
+        padding-top: 15px;
     }
+
+
 
     .txtFirm {
         margin-inline: 0px;
     }
 
     .ServiceSection {
-        margin-top: 70px;
+        margin-top: 80px;
     }
 
     .subTittleServ {
@@ -1272,16 +1144,21 @@ footer {
     .lineMovileBox {
         display: flex;
         justify-content: center;
+        margin-top: 80px;
     }
 
     .lineMovile {
         display: block !important;
     }
 
+    .servicesTxt {
+        margin-top: 25px;
+    }
+
     .subTittleServ {
         margin-bottom: 20px;
     }
-    
+
     .contentSwiper {
         margin-top: 30px;
     }
@@ -1298,7 +1175,11 @@ footer {
 
     .contactSection {
         padding-inline: 0px;
-        margin-top: 100px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .formu {
@@ -1314,13 +1195,10 @@ footer {
     }
 
     .profileSection {
-        margin-top: 25px;
+        margin-top: 150px;
     }
 
-    .subcontactSection {
-        margin-bottom: 20px;
-    }
-
+   
     footer {
         margin-top: 100px;
     }
@@ -1330,7 +1208,7 @@ footer {
         padding-inline: 50px;
     }
 
-   
+
 
     .tittleCardProfile {
         font-size: 20px !important;
@@ -1369,14 +1247,11 @@ footer {
         padding-inline: 0%;
         margin-inline: 5px;
         padding-block: 40px;
-        
+
     }
 
-    .ButtonsFront {
-        display: none;
-    }
 
-   
+
     .arrowsDown {
         width: 50px;
         margin-top: 500px;
@@ -1405,7 +1280,8 @@ footer {
         padding-block: 15px;
     }
 
-    /* .navbar-brand {
-        padding-inline: 0px !important;
-    } */
+    .contactSection {
+        margin-top: 100px;
+    }
+
 }
