@@ -1101,11 +1101,11 @@ footer {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 88vh;
+        height: 89vh;
         width: 100%;
         padding-inline: 0px;
         margin-inline: 0px;
-        margin-top: 90px;
+        margin-top: 80px;
         box-shadow: none;
         display: flex;
         justify-content: center;
@@ -1246,7 +1246,7 @@ footer {
     }
 
     .modal-content {
-        height: 80%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;        
