@@ -100,81 +100,85 @@ nav {
 }
 
 
-
-.SubContainHistory {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-block: 50px;
-
-}
-
-.tittleSection {
-    font-family: 'Jomolhari', serif;
-    font-weight: 100;
-    text-shadow: 2px 2px 3px #999999;
-}
-
-.SubContainHistory h4 {
-    
-    margin-top: 60px;
-}
-
-.SubContainHistory p {
-    margin-inline: 100px;
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 0%;
-    margin-top: 0px;
-}
-
 .firmaSection {
-    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+    padding-inline: 0% !important;
+
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    margin-top: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(img/BackgroundHistory.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: rgba(0, 0, 0, 0.4);
+    /* Color del overlay (ajusta la opacidad según lo necesites) */
 }
 
-.subfirmaSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.subTittle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    padding-block: 10px;
-}
-
-.txtFirm {
-    margin-inline: 100px;
-    font-size: 24px;
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
     text-align: center;
-    margin-top: 0px;
+    width: 60%;
+    z-index: 2;
 }
+
+.carousel-caption p {
+    font-family: 'Jost', sans-serif;
+}
+
+.firmaTxt {
+    margin-bottom: 60px;
+    font-family: 'Jomolhari', serif;
+}
+
+.firmaSubTxt {
+    margin-bottom: 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+
 
 .lineMovile {
     display: none !important;
 }
 
 .ServiceSection {
-    margin-top: 180px;
-    height: 100vh;
+    margin-top: 100px;
+    height: 80vh;
+}
+
+.boxTittleSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.tittleSection {
+    font-family: 'Jomolhari', serif;
+    font-weight: 500;
 }
 
 .subTittleServ {
@@ -297,7 +301,7 @@ swiper-slide a {
 /* -------------------------------- */
 
 .contactSection {
-    margin-top: 0px;
+    margin-top: 150px;
     padding: 50px;
     height: 100vh;
     background-image: url(./img/contantBbb.png);
@@ -319,13 +323,7 @@ textarea {
     font-size: 20px;
 }
 
-.subcontactSection {
-    display: flex;
 
-    justify-content: center;
-    align-items: end;
-    
-}
 
 .form-container {
     max-width: 550px;
@@ -398,7 +396,7 @@ textarea {
 }
 
 .profileSection {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .cardsProfileBox {
@@ -591,7 +589,7 @@ footer {
 .custom-modal p::-webkit-scrollbar-thumb {
     background-color: #2a25289c;
     border-radius: 4px;
-    
+
 }
 
 .custom-modal p::-webkit-scrollbar-track {
@@ -620,11 +618,7 @@ footer {
 
 /* Resposive */
 
-@media screen and (max-width: 1925px) {
-    .firmaSection {
-        margin-top: 25%;
-    }
-}
+/* @media screen and (max-width: 1925px) {} */
 
 @media screen and (max-width: 1600px) {
 
@@ -699,7 +693,11 @@ footer {
 
 @media screen and (max-width: 1440px) {
 
-
+    .carousel-caption {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+    }
 
 
     .imgBoxFront {
@@ -725,32 +723,11 @@ footer {
         margin-top: 50px;
     }
 
-    .tittleSection {
-        font-size: 18px;
-        margin-block: 10px;
-    }
-
-    .SubContainHistory {
-        padding-top: 10px;
-    }
-
-    .SubContainHistory p {
-        font-size: 16px;
-        padding-block: 30px;
-    }
 
     .subTittle {
         font-size: 22px;
     }
 
-
-    .txtFirm {
-        font-size: 16px;
-    }
-
-    .firmaTittle {
-        margin-top: 20px;
-    }
 
     .subTittleServ {
         font-size: 22px;
@@ -783,10 +760,7 @@ footer {
         font-size: 18px;
     }
 
-    .profileSection {
-        margin-top: 120px;
-    }
-
+    
     .tittleCardProfile {
         font-size: 20px;
     }
@@ -845,8 +819,11 @@ footer {
 
 
 @media screen and (max-width: 1366px) {
-    .SubContainHistory {
-       padding-top: 10px;
+
+    .carousel-caption {
+        position: absolute;
+        top: 43%;
+        left: 50%;
     }
 
     .imgBoxFront {
@@ -905,6 +882,12 @@ footer {
     .imgBoxFront {
         margin-top: 50px;
     }
+
+    .carousel-caption {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
 }
 
 
@@ -915,6 +898,19 @@ footer {
         height: 70vh;
     }
 
+    .firmaSection {
+        margin-top: 210px;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+    }
+
+    .firmaTxt {
+        margin-bottom: 45px;
+    }
 
 }
 
@@ -923,6 +919,36 @@ footer {
     .imgBoxFront {
         display: none;
     }
+
+    .profileSection {
+        margin-top: 30px;
+    }
+
+    .firmaSection {
+        margin-top: 280px;
+    }
+
+    .carousel-item {
+        height: 80vh;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        object-position: right bottom;
+        width: 100%;
+        height: 100%;
+        /* O ajusta la altura necesaria */
+    }
+
+    .carousel-caption {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+   
+   
 
     .imgBoxFrontMobile {
         display: block;
@@ -1015,19 +1041,14 @@ footer {
 
 
 
-    .txtFirm {
-        margin-inline: 50px;
-    }
+
 
     swiper-slide {
         height: 500px;
         width: 350px;
     }
 
-    .ServiceSection {
-        margin-top: 110px;
-    }
-
+   
     .modalContent {
         padding-inline: 30px;
     }
@@ -1096,6 +1117,22 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    
+    .carousel-caption {
+        width: 80%;
+        top: 43%;
+    }
+
+    .carousel-caption p {
+        text-align: justify;
+    }
+
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
 
     .imgBoxFrontMobile {
         background-position: center;
@@ -1121,31 +1158,7 @@ footer {
 
     }
 
-    .subfirmaSection {
-        margin-top: 150px;
-    }
-
-    .SubContainHistory {
-        margin-top: 0px;
-        padding-top: 10px;
-    }
-
-    .SubContainHistory p {
-        margin-inline: 0px;
-        margin-top: 0px;
-        padding-top: 15px;
-    }
-
-
-
-    .txtFirm {
-        margin-inline: 0px;
-    }
-
-    .ServiceSection {
-        margin-top: 80px;
-    }
-
+  
     .subTittleServ {
         padding-inline: 20px;
         text-align: center;
@@ -1157,16 +1170,13 @@ footer {
         margin-top: 80px;
     }
 
-    
+
 
     .lineMovile {
         display: block !important;
     }
 
-    .servicesTxt {
-        margin-top: 25px;
-    }
-
+   
     .subTittleServ {
         margin-bottom: 20px;
     }
@@ -1187,7 +1197,7 @@ footer {
 
     .contactSection {
         padding-inline: 0px;
-        margin-top: 0px;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1206,11 +1216,7 @@ footer {
 
     }
 
-    .profileSection {
-        margin-top: 150px;
-    }
-
-   
+    
     footer {
         margin-top: 100px;
     }
@@ -1251,7 +1257,7 @@ footer {
         height: auto;
         display: flex;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
 
     .modalContent {
