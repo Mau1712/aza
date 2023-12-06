@@ -10,8 +10,13 @@
 
 
 body {
-    background-color: white
+    background-color: white;
+    font-family: 'Jost', sans-serif;
 }
+
+body.salida {
+    transition: opacity 0.6s ease-out; /* Ajusta la duración y el efecto de transición */
+  }
 
 .navMobile {
     display: none;
@@ -141,21 +146,40 @@ nav {
     text-align: center;
     width: 60%;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.carousel-caption p {
+/* .carousel-caption p {
     font-family: 'Jost', sans-serif;
-}
+} */
 
-.firmaTxt {
-    margin-bottom: 60px;
-    font-family: 'Jomolhari', serif;
-}
-
-.firmaSubTxt {
-    margin-bottom: 20px;
+/* .firmaTxt {
     font-family: 'Jost', sans-serif;
+} */
+
+.boxfirmaTxt {
+    position: relative;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 35px;   
 }
+
+.boxfirmaTxt::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    /* Grosor de la línea */
+    background: linear-gradient(to right, transparent, #E7E7E7, transparent);
+}
+
+/* Efecto de la línea solo para la clase firmaTxt */
+
 
 
 
@@ -164,26 +188,37 @@ nav {
 }
 
 .ServiceSection {
-    margin-top: 100px;
+    margin-top: -160px;
     height: 80vh;
-}
-
-.boxTittleSection {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.boxTittleSection {
+    position: relative;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 35px;
+     
+    display: inline-block;
     
 }
 
-.tittleSection {
-    font-family: 'Jomolhari', serif;
-    font-weight: 100;
-    
-    border-bottom: 2px solid #525151;
-    padding-bottom: 5px;
-    
+.boxTittleSection::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    /* Grosor de la línea */
+    background: linear-gradient(to right, transparent, #1E1E1E, transparent);
 }
+
+
+
 
 .subTittleServ {
     font-weight: 600;
@@ -305,8 +340,8 @@ swiper-slide a {
 /* -------------------------------- */
 
 .contactSection {
-    margin-top: 150px;
-    padding: 50px;
+    margin-top: 50px;
+    padding: 20px;
     height: 100vh;
     background-image: url(./img/contantBbb.png);
     background-attachment: fixed;
@@ -333,7 +368,7 @@ textarea {
     max-width: 550px;
     height: auto;
     margin: 0 auto;
-    background-image: url(img/rectangleContact.png);
+    background-image: url(./img/rectangleContact.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px;
@@ -400,7 +435,13 @@ textarea {
 }
 
 .profileSection {
-    margin-top: 100px;
+    margin-top: 270px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .cardsProfileBox {
@@ -462,9 +503,9 @@ textarea {
     text-decoration: none;
 }
 
-.tittleCardProfile {
+/* .tittleCardProfile {
     font-family: 'Jomolhari', serif;
-}
+} */
 
 
 
@@ -487,14 +528,13 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 250px;
     background-color: #1E1E1E;
     color: #E7E7E7;
 }
 
 .subContainFooter {
     padding-block: 50px;
-    margin-block: 50px;
+    /* margin-block: 20px; */
 }
 
 .tittleFooter img {
@@ -562,6 +602,7 @@ footer {
     background: #fff;
     max-width: 900px;
     margin: 10% auto;
+    margin-top: 25px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -572,10 +613,10 @@ footer {
     justify-content: center;
 }
 
-.custom-modal h3 {
+/* .custom-modal h3 {
     font-family: 'Jomolhari', serif;
 
-}
+} */
 
 
 .custom-modal p {
@@ -624,9 +665,25 @@ footer {
 
 /* Resposive */
 
-/* @media screen and (max-width: 1925px) {} */
+@media screen and (max-width: 1925px) {
+    .firmaSection {
+        margin-top: 350px;
+    }
+    
+    .ServiceSection {
+        margin-top: 0px;
+    }
+}
 
 @media screen and (max-width: 1600px) {
+
+    .ServiceSection {
+        margin-top: -55px;
+    }
+
+    .contactSection {
+        margin-top: 10px;
+    }
 
 
     .boxNav {
@@ -641,12 +698,9 @@ footer {
         margin-top: 60px;
     }
 
-
-
-    .subTittle {
-        margin-top: 30px;
+    .firmaSection {
+        margin-top: 250px;
     }
-
 
     .form-container {
         width: 500px;
@@ -726,16 +780,7 @@ footer {
         margin-top: 50px;
     }
 
-
-    .subTittle {
-        font-size: 22px;
-    }
-
-
-    .subTittleServ {
-        font-size: 22px;
-    }
-
+   
     .mySwiper {
         padding-top: 5px !important;
     }
@@ -782,7 +827,7 @@ footer {
 
 
     .custom-modal h3 {
-        font-family: 'Jomolhari', serif;
+        /* font-family: 'Jomolhari', serif; */
         font-size: 20px;
     }
 
@@ -809,9 +854,7 @@ footer {
         width: 60px;
     }
 
-    footer {
-        margin-top: 150px;
-    }
+    
 
    
 }
@@ -819,6 +862,13 @@ footer {
 
 
 @media screen and (max-width: 1366px) {
+    .firmaSection {
+        margin-top: 220px;
+    }
+
+    .ServiceSection {
+        margin-top: 80px;
+    }
 
     .carousel-caption {
         position: absolute;
@@ -840,6 +890,7 @@ footer {
 
     .contactSection {
         height: 100%;
+        margin-top: 50px;
     }
 
 
@@ -888,6 +939,11 @@ footer {
         top: 40%;
         left: 50%;
     }
+    
+    .ServiceSection {
+        margin-top: 30px;
+    }
+
 }
 
 
@@ -899,29 +955,39 @@ footer {
     }
 
     .firmaSection {
-        margin-top: 210px;
+        margin-top: 180px;
     }
+
+    .ServiceSection {
+        margin-top: 40px;
+    }
+
+
 
     .carousel-caption {
         position: absolute;
-        top: 35%;
+        top: 50%;
         left: 50%;
-    }
-
-    .firmaTxt {
-        margin-bottom: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
 }
 
 @media screen and (max-width: 800px) {
 
+    .ServiceSection {
+        margin-top: 30px;
+    }
+
     .imgBoxFront {
         display: none;
     }
 
     .profileSection {
-        margin-top: 30px;
+        margin-top: 250px;
     }
 
     .firmaSection {
@@ -946,9 +1012,6 @@ footer {
         top: 50%;
         left: 50%;
     }
-
-   
-   
 
     .imgBoxFrontMobile {
         display: block;
@@ -1004,7 +1067,7 @@ footer {
     .nav-link {
         color: #2A2528;
         font-size: 20px;
-        font-family: 'Jomolhari', serif;
+        /* font-family: 'Jomolhari', serif; */
         font-weight: 600;
         text-align: center;
     }
@@ -1037,10 +1100,6 @@ footer {
         object-fit: cover !important;
         margin-top: 70px;
     }
-
-
-
-
 
 
     swiper-slide {
@@ -1112,6 +1171,11 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
+    }
+
+    footer {
+        padding-block: 25px;
     }
 
 }
@@ -1119,12 +1183,20 @@ footer {
 @media screen and (max-width: 480px) {
 
     .firmaSection  {
-        margin-top: 50px;
+        margin-top: 250px;
+    }
+
+    .ServiceSection {
+        margin-top: 120px;
     }
     
     .profileSection {
-        margin-top: 90px;
+        margin-top: 220px;
     }
+
+    /* .boxTittleSection {
+        margin-bottom: 0px;
+    } */
     
     .carousel-caption {
         width: 80%;
@@ -1178,13 +1250,6 @@ footer {
         margin-top: 80px;
     }
 
-    #lineId {
-       margin-top: 180px; 
-    }
-
-    #lineIdTwo{
-        margin-top: 35px;
-    }
 
     .lineMovile {
         display: block !important;
@@ -1211,7 +1276,8 @@ footer {
 
     .contactSection {
         padding-inline: 0px;
-        margin-top: 50px;
+        padding-block: 0px;
+        margin-top: 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1228,11 +1294,6 @@ footer {
         width: 380px;
         margin-inline: 0px !important;
 
-    }
-
-    
-    footer {
-        margin-top: 100px;
     }
 
     .addresFooter p {
@@ -1303,6 +1364,15 @@ footer {
     .navbar-brand {
         padding-inline: 5px !important;
     }
+
+    footer {
+        padding-block: 0px;
+    }
+
+    .tittleFooter img {
+        width: 300px;
+    }
+
 
 }
 

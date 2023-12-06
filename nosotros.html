@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="style_v2.css">
+
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Jomolhari&display=swap"
+        rel="stylesheet">
+
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="icon" href="img/AZA__Isotipo_Black.png" type="image/png">
+
+    <title>Nosotros</title>
+</head>
+
+
+<body class="salida">
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid boxNav">
+            <a class="navbar-brand" href="#anclaBrand"><img src="img/AZA__Isotipo_White.png" alt=""></a>
+            <button class="navbar-toggler btnNavDest" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse naviItems" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="activeIdLink" class="nav-link transicion" href="./index.html">Home</a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a id="activeIdLink" class="nav-link" aria-current="page" href="#anclaService">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="activeIdLink" class="nav-link" href="#anclaNosotros">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="activeIdLink" class="nav-link" aria-current="page" href="#anclaContacto">Contacto</a>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div class="navMobile">
+                <button class="btn btnMenuMobile" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img
+                        class="img-fluid imgMenuBurgMobile" src="./img/btnMenuMobile.png" alt=""></button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">AZA</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="navItemMobile">
+                                <a class="nav-link transicion" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="anclaBrand">
+        <div class="frontPage">
+            <div class="frontPagebackgroud">
+                <div class="container-fluid imgBoxFront"></div>
+
+                <div class="container-fluid imgBoxFrontMobile">
+                    <div class="arrowsDown">
+                        <img class="img-fluid animate__animated animate__flash animate__infinite animate__slower"
+                            src="./img/arrowDown.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+    <section class="profileSection" id="anclaNosotros">
+
+        <div class="boxTittleSection">
+            <h4 class="tittleSection">NOSOTROS</h4>
+        </div>
+
+        <div class="container cardsProfileBox">
+            <a href="#" class="card cardProfile" data-modal-id="profileOne" style="width: 18rem;">
+                <div class="imgBoxCard">
+                    <img src="img/el.png" class="card-img-top" alt="">
+                </div>
+                <span class="line"></span>
+                <div class="card-body">
+                    <h3 class="card-title tittleCardProfile">Ricardo Araujo Bravo</h3>
+                    <p class="card-text">Socio fundador</p>
+                </div>
+            </a>
+
+            <a href="#" class="card cardProfile" data-modal-id="profileTwo" style="width: 18rem;">
+                <div class="imgBoxCard">
+                    <img src="img/ella.png" class="card-img-top" alt="">
+                </div>
+                <span class="line"></span>
+                <div class="card-body">
+                    <h3 class="card-title tittleCardProfile">Paula Zambrano</h3>
+                    <p class="card-text">Socia fundadora</p>
+                </div>
+            </a>
+
+
+            <div id="profileOneCustomModal" class="custom-modal" style="display: none;">
+                <div>
+                    <img class="img-fluid imgModalProfile" src="./img/el_modal.png" alt="">
+                    <span class="line"></span>
+                    <h3>Ricardo Araujo Bravo</h3>
+                    <h6>Socio fundador</h6>
+                    <p>
+                        Abogado egresado de la Universidad Católica Andrés Bello (UCAB), especialista en Derecho
+                        Administrativo y actualmente doctorando en Derecho de la misma casa de estudios.
+                        <br><br>
+                        Ricardo tiene más de 11 años de experiencia en el ejercicio del derecho público, iniciándose
+                        profesionalmente en el Área Judicial de la Sindicatura del Municipio Baruta (2012-2015),
+                        escalando así a la jefatura de la Unidad de Asuntos Administrativos y Constitucionales de la
+                        Sindicatura del Municipio Sucre (2016-2017) y, posteriormente, el cargo de Síndico
+                        Procurador del Municipio El Hatillo (2018-2023).
+                        <br><br>
+                        Se encuentra especializado en el conocimiento del derecho público en general,
+                        constitucional, urbanístico, administrativo, regulatorio y energético, contrataciones
+                        públicas, procedimientos administrativos, tributario, redacción de instrumentos jurídicos:
+                        ordenanzas, decretos y resoluciones, asesoría tanto a particulares como a los órganos y
+                        entes de la administración pública, derecho municipal, representación en procesos judiciales
+                        y arbitraje, entre otras áreas.
+                        <br><br>
+                        Es miembro de la Unión Iberoamericana de Municipalistas (UIM) y ha recibido la Condecoración
+                        Orden José Miguel José Sanz en su primera clase, otorgada por el Ilustre Colegio de Abogados
+                        de Caracas (2023), el Premio Municipal El Hatillo “Dr. Pedro Alí Zoppi” otorgado por el
+                        Concejo Municipal de El Hatillo (2022) y la Orden al Buen Ciudadano por parte del Consejo
+                        Legislativo del Estado Miranda (2021).
+                    </p>
+
+                    <span class="closeCustomModal" style="cursor: pointer;">x</span>
+                </div>
+            </div>
+
+            <div id="profileTwoCustomModal" class="custom-modal " style="display: none;">
+                <div>
+                    <img class="img-fluid imgModalProfile" src="./img/ella_modal.png" alt="">
+                    <span class="line"></span>
+                    <h3>Paula Zambrano</h3>
+                    <h6>Socia fundadora</h6>
+                    <p>
+                        Abogado egresada en el año 2005 de la Universidad Católica Andrés Bello (UCAB) y
+                        especialista en Derecho Administrativo, con estudios de Derecho Procesal concluidos en la
+                        Universidad Central de Venezuela (UCV).
+                        <br><br>
+                        Paula se ha desarrollado profesionalmente a nivel judicial y municipal en las áreas del
+                        derecho público, administrativo, constitucional, tributario, civil y urbanístico. Fue
+                        funcionaria del Poder Judicial donde se desempeñó como abogado relator de sentencias.
+                        Asesoró sobre procedimientos administrativos y licitaciones en el Servicio Nacional de
+                        Contrataciones. Ejerció durante 7 años el cargo de Procuradora Judicial del Municipio
+                        Baruta, encargándose del control y seguimiento de los juicios en las más variadas materias e
+                        instancias, incluyendo el Tribunal Supremo de Justicia, efectuando importantes impugnaciones
+                        de leyes nacionales.
+                        <br><br>
+                        Fue instructora en la Academia de Policía de Baruta (2014) y es autora del libro “Las
+                        Misiones en la Organización Administrativa Venezolana”, editado en el año 2011 por FUNEDA.
+                        Actualmente, en el ámbito privado atiende, entre otros, asuntos notariales, registrales y de
+                        derecho sucesoral.
+                        <br><br>
+                        Tiene reconocimientos por parte de la Alcaldía de Baruta, el Concejo Municipal de El Hatillo
+                        y la Policía Municipal de Baruta.
+                    </p>
+
+                    <span class="closeCustomModal" style="cursor: pointer;">x</span>
+                </div>
+            </div>
+    </section>
+
+
+
+    <footer>
+        <div id="anclaFooter"></div>
+        <div class="subContainFooter container">
+
+            <div class="tittleFooter">
+                <img class="img-fluid" src="./img/AZA__White.png" alt="">
+            </div>
+            <div class="addresFooter">
+                <a
+                    href="https://www.google.com/maps/dir//Centro+Empresarial+La+Lagunita,+Caracas+1083,+Miranda,+Venezuela/@10.4227116,-66.8246793,16.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8c2af79180c9b425:0x6c114c5fad288d4a!2m2!1d-66.8227409!2d10.4221735?entry=ttu">
+                    <p>
+                         Centro Empresarial La Lagunita, piso 2, oficina 206, urbanización La Lagunita, Municipio El
+                        Hatillo, Caracas Venezuela, 1083.
+                        <br>
+                        <img class="imgMap" src="./img/mapa.png" alt="">
+                    </p>
+                </a>
+                <a href="">Términos y condiciones</a>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/azaconsultoresl/"><img src="./img/redes/Instagram.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/aza-legal/"><img src="./img/redes/Linkedin.png" alt=""></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Mail.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('j_ZYhJ6GjR_J5cFVB')
+    </script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <!-- TouchSwipe  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <script src="contact.js"></script>
+    <script src="index_v2.js"></script>
+</body>
+
+
+</html>
