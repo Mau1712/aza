@@ -205,3 +205,18 @@ document.querySelectorAll('.transicion').forEach(item => {
     });
   });
   
+
+
+//   terminos -------------------------------
+
+const privacyPolicyLink = document.getElementById("termOfServiceLink");
+
+termOfServiceLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    swal.fire({
+      icon: 'info',
+      title: 'Aza Consultores',
+      html: '<p> Por cargar </p>',
+      confirmButtonColor: '#2A2528'  
+    });
+  });
